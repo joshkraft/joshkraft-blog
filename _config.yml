@@ -39,8 +39,8 @@ baseurl: "/joshkraft-blog" # the subpath of your site, e.g. "/blog".
 # Github and twitter are optional:
 minima:
   social_links:
-    twitter: https://twitter.com/joshuatkraft
-    github: https://github.com/joshkraft
+    twitter: joshuatkraft
+    github: joshkraft
 
 # Set this to true to get LaTeX math equation support
 use_math:
