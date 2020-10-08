@@ -4,6 +4,8 @@ title: About Me
 permalink: /about/
 ---
 
+![Avatar](joshkraft-blog/images/avatar.jpg)
+
 My name is Josh Kraft. I am a passionate generalist, currently interested in
 building scalable software solutions in the cloud. I currently work at
 [nCino](https://www.ncino.com), a leading fintech company built on the
