@@ -23,7 +23,7 @@ permalink: /about/
 }
 
 .center-vertically {
-  top: 50%;
+  vertical-align: middle;
 }
 
 </style>
