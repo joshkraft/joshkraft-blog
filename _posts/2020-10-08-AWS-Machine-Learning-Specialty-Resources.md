@@ -1,3 +1,15 @@
+---
+title: "AWS Machine Learning Specialty Resources"
+description: "Reccomended resources for the AWS Machine Learning Specialty"
+layout: post
+toc: false
+comments: true
+image: images/some_folder/your_image.png
+hide: false
+search_exclude: true
+categories: [AWS]
+---
+
 # AWS Machine Learning Specialty Resources
 
 ------
