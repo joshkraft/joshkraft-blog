@@ -1,6 +1,6 @@
 ---
 title: "AWS Machine Learning Specialty Resources"
-description: "Reccomended resources for the AWS Machine Learning Specialty"
+description: "Reccomended resources passing for the AWS Machine Learning Specialty."
 layout: post
 toc: false
 comments: true
