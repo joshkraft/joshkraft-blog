@@ -87,7 +87,7 @@ At this point, you should have a solid foundational understanding of the basics 
 
 In this book (which is still in draft form as of October 2020), [Harrison Kinsley](https://github.com/Sentdex) guides you through the construction of a neural network in pure Python, starting from a single neuron and building up from there. 
 
-#### Other Interesting ML Resources
+### Other Interesting ML Resources
 
 The above resources are more than sufficient to build enough understanding of ML in order to pass this certification. However, I found the following materials to be interesting when studying ML:
 
@@ -115,18 +115,30 @@ The other 50% of the exam covers the AWS services relevant to training, tuning, 
 
 [**AWS Certified Machine Learning Specialty 2020 - Hands On! (Course) ($)**](https://www.udemy.com/course/aws-machine-learning/)
 
+This course provides a good overview of the breadth of AWS knowledge you need to pass this certification exam. However, this course is best used as a *syllabus* for your AWS studying. You will likely need to spend lots of time studying the material covered in each section of the course in the actual AWS documentation, as the course covers everything at a pretty broad level.
 
+[**AWS SageMaker Developer Guide (Documentation) **](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html)
+
+This site is an exhaustive look at each component of SageMaker, which is the main AWS service tested in this exam. While I would not reccomend reading all of the documentation from start to finish, I would reccomend saving this site and referring to it often.
+
+[**AWS SageMaker Examples (Github Repo) **](https://github.com/aws/amazon-sagemaker-examples)
+
+This repository of example notebooks is a phenomenal resource for getting hands-on with SageMaker, and tinkering with the built-in algorithms that you will need to know for the test.
 
 ------
-
-
 
 ## 4. Read up on Machine Learning Engineering concepts.
 
+To tie everything together, I would strongly reccomend reading the [Machine Learning Engineering book](http://www.mlebook.com/wiki/doku.php) by [Andriy Burkov](https://twitter.com/burkov). This book is an incredible resource for learning about the stumbling blocks of deploying ML systems at scale, in production. **These concepts are tested heavily on the exam**, and are not easy to learn without industry experience. The book is distriuted on the 'read-first, buy-layer' principle, so you are free to read the book and only purchase if you find it to be useful.
+
 ------
-
-
 
 ## 5. Take the AWS practice exam. If it goes well, take the real exam.
 
-## 
+At this point, you should be ready to take (and pass) the AWS Machine Learning - Specialty certification. Since unofficial practice exams are so hard to come by for this exam, I would reccomend shelling out the $40 USD to take the official AWS practice exam.
+
+> **Note**: If you have passed an AWS certification in the past, you should have recieved a coupon for 1 free practice exam in your email Inbox.
+
+I found that my performance on the practice exam was a good proxy for my performance on the real exam, so if you pass the practice exam, I would reccomend going ahead and signing up for the real thing. 
+
+Feel free to reach out with any further questions about this exam!
