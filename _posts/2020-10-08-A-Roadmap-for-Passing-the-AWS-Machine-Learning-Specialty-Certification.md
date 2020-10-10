@@ -37,7 +37,7 @@ For the vast majority of people looking to enter the field of ML, learning to co
 
 Currently, Python is the go-to language for most machine learning practitioners and libraries, so the resources that you come across when studying ML will likely be written in Python. Luckily, Python has a relatively short learning curve, and can be used to do just about anything. There are a plethora of Python resources available for free on the internet, but my favorite starting point is the [**Kaggle Python Course**](https://www.kaggle.com/learn/python), taught by [**Colin Morris**](https://www.kaggle.com/colinmorris). For those with absolutely no programming experience, [**Learn Python the Hard Way**](https://learncodethehardway.org/python/) is another common starting point.
 
-When you feel comfortable with the basics of Python, go ahead and move on to the next section. If you start working on the ML resources below and feel held back by your lack of experience, you can always return to this section for a few more days/weeks/years. 
+When you feel comfortable with the basics of Python, go ahead and move on to the next section. If you start working on the ML resources below and feel held back by your lack of Python experience, you can always return to this section for a few more days/weeks/months. 
 
 **Important Note:** You will not see any code on the exam. This is not a required prerequisite. However, the exam expects a deep understanding of ML concepts, and being able to read/write code in Python is the fastest way for most people to build that intuition.
 
@@ -71,7 +71,7 @@ Another resource I found useful was François Chollet's *Deep Learning with Pyth
 
 At this point, you should have a solid foundational understanding of the basics of ML, and a reasonable understanding of modern deep learning architectures. In order to truly drill in your understanding of fundamental concepts such as the utility of activation functions, gradient descent, and backpropagation, you may find it useful to code a neural network from scratch. 
 
-In this book (which is still in draft form as of October 2020),[Harrison Kinsley](https://github.com/Sentdex) guides you through the construction of a neural network in pure Python, starting from a single neuron and building up from there. 
+In this book (which is still in draft form as of October 2020), [Harrison Kinsley](https://github.com/Sentdex) guides you through the construction of a neural network in pure Python, starting from a single neuron and building up from there. 
 
 **Other Interesting Resources**
 
@@ -97,3 +97,10 @@ I believe that the above resources are more than sufficient to build enough unde
 
 ## 4. Read up on Machine Learning Engineering concepts.
 
+------
+
+
+
+## 5. Take the AWS practice exam. If it goes well, take the real exam.
+
+## 
