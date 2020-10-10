@@ -1,14 +1,14 @@
 ---
 
-title: "AWS Machine Learning Specialty Resources"
-description: "Reccomended resources passing for the AWS Machine Learning Specialty."
+title: "A Roadmap for Passing the AWS Machine Learning Specialty Certification"
+description: "Reccomended resources for passing for the AWS Machine Learning Specialty."
 layout: post
-toc: false
+toc: true
 comments: true
-image: images/some_folder/your_image.png
+image: images/blog_posts/AWS_Machine_Learning_Certification_Roadmap/AWS-Certified_Machine-Learning_Specialty_512x512.6ac490d15fe033a3d67ca544ecd0bcbcb10d391a.png
 hide: false
 search_exclude: true
-categories: [AWS]
+categories: [AWS, Machine Learning]
 
 ---
 
