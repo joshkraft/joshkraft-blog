@@ -3,9 +3,9 @@
 title: "A Roadmap for Passing the AWS Machine Learning Specialty Certification"
 description: "Reccomended resources for passing for the AWS Machine Learning Specialty."
 layout: post
-toc: true
+toc: false
 comments: true
-image: images/blog_posts/AWS_Machine_Learning_Certification_Roadmap/AWS-Certified_Machine-Learning_Specialty_512x512.6ac490d15fe033a3d67ca544ecd0bcbcb10d391a.png
+image: ../images/blog_posts/AWS_Machine_Learning_Certification_Roadmap/AWS-Certified_Machine-Learning_Specialty_512x512.6ac490d15fe033a3d67ca544ecd0bcbcb10d391a.png
 hide: false
 search_exclude: true
 categories: [AWS, Machine Learning]
@@ -29,7 +29,9 @@ After passing this exam myself, I believe the best way to approach this certific
 4. Read up on Machine Learning Engineering concepts.
 5. Take the AWS practice exam. If it goes well, take the real exam.
 
-Most of these resources are free. Paid resources will be denoted by an asterisk (*).
+Most of these resources are free. Paid resources will be denoted by a dollar sign ($).
+
+------
 
 ## 1. Become proficient(ish) in Python.
 
@@ -49,13 +51,11 @@ When you feel comfortable with the basics of Python, go ahead and move on to the
 
 Taught by [Colin Morris](https://www.kaggle.com/colinmorris), this course provides a great fast-paced, interactive introduction to Python. Everything is completed in the browser, so there is no need to even install Python on your computer to get started.
 
-[**Learn Python the Hard Way***](https://learncodethehardway.org/python/)
+[**Learn Python the Hard Way ($)**](https://learncodethehardway.org/python/)
 
 This course provides a better starting point for those with absolutely no programming experience, and focuses on fundamentals and repitition before moving on to more advanced topics.
 
 ------
-
-
 
 ## 2. Study ML until you can explain the core concepts/algorithms to a friend.
 
@@ -77,11 +77,11 @@ I am a huge fan of everything FastAI puts out, and I found the latest version of
 
 This course leaves you with a good understanding of what Deep Learning is, why it has become so powerful in recent years, and how to apply concepts like [transfer learning](https://en.wikipedia.org/wiki/Transfer_learning) to achieve state of the art results in areas like computer vision. I recommend taking your time with this course - the more you put in, the more you will get out.
 
-[**Deep Learning with Python (Book)***](https://www.amazon.com/Deep-Learning-Python-Francois-Chollet/dp/1617294438)
+[**Deep Learning with Python (Book) ($)**](https://www.amazon.com/Deep-Learning-Python-Francois-Chollet/dp/1617294438)
 
 Another resource I found useful was François Chollet's *Deep Learning with Python* book. This book takes a similar approach to the FastAI course, focusing on practical application and examples over everything else. Chollet does a great job of using simple Python code snippets (instead of formulas) to explain the core mathematical concepts underlying modern neural network architectures.
 
-[**Neural Networks from Scratch (Book)***](https://nnfs.io)
+[**Neural Networks from Scratch (Book) ($)**](https://nnfs.io)
 
 At this point, you should have a solid foundational understanding of the basics of ML, and a reasonable understanding of modern deep learning architectures. In order to truly drill in your understanding of fundamental concepts such as the utility of activation functions, gradient descent, and backpropagation, you may find it useful to code a neural network from scratch. 
 
@@ -103,13 +103,11 @@ This course is another FastAI offering, covering a broad range of ethical issues
 
 This series of videos, produced by [Grant Sanderson](https://www.3blue1brown.com/about) at 3blue1brown, provides a phenomenal visualization of what is happening 'behind the scenes' when a neural network is *learning*. I watched this series a few times throughout my studying, and gained more understanding each time I watched them through.
 
-
-
 ------
 
-
-
 ## 3. Learn the AWS services/algorithms relevant to this exam.
+
+
 
 ------
 
