@@ -15,6 +15,10 @@ permalink: /about/
   padding: 5px;
 }
 
+.img {
+  border-radius: 8px;
+}
+
 </style>
 
 <div class="row">
