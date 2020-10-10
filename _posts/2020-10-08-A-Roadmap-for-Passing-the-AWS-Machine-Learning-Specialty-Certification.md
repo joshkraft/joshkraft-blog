@@ -31,7 +31,7 @@ After passing this exam myself, I believe the best way to approach this certific
 
 ## 1. Become proficient(ish) in Python.
 
-The first thing to note about this exam is that 50% of the material is purely ML concepts, with no AWS crossover. Speaking broadly, the two ways to build understanding of ML concepts is through reading mathematical formulas (theory), or implementations in code (application). 
+The first thing to note about this exam is that ~50% of the questions are about ML concepts, with no AWS crossover. Speaking broadly, the two ways to build understanding of ML concepts is through reading mathematical formulas (theory), or implementations in code (application). 
 
 For the vast majority of people looking to enter the field of ML, learning to code (and read code) first is a great option, as it will allow you to start experimenting with the material on your own. Then, you can pick up on the math as it becomes necessary along the way.
 
