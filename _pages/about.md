@@ -7,48 +7,19 @@ permalink: /about/
 <style>
 
 .row {
-  display: table-row;
+  display: flex;
 }
-
+  
 .column {
-  float: left;
-  padding: 10px;
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.left{
-    width: 33%;
-}
-
-.right{
-    width: 66%;
-}
-
-.frame {
-  height: 160px; /* Can be anything */
-  width: 160px; /* Can be anything */
-  position: relative;
-}
-
-.img {
-  max-height: 100%;
-  max-width: 100%;
-  width: auto;
-  height: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+  flex: 33.33%;
+  padding: 5px;
 }
 
 </style>
 
 <div class="row">
 
-    <div class="column left frame">
+    <div class="column left">
         <img src="../images/avatar.jpg" alt="Avatar">
     </div>
     
