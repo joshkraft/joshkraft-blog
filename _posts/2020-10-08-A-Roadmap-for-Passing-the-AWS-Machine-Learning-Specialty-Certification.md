@@ -9,10 +9,7 @@ image: images/blog_posts/AWS_Machine_Learning_Certification_Roadmap/AWS-Certifie
 hide: false
 search_exclude: true
 categories: [AWS, Machine Learning]
-
 ---
-
-# A Roadmap for Passing the AWS Machine Learning Specialty Certification
 
 ## Overview
 
@@ -50,24 +47,45 @@ When you feel comfortable with the basics of Python, go ahead and move on to the
 
 ## 2. Study ML until you can explain the core concepts/algorithms to a friend.
 
-Once you are comfortable with the basics of Python, it is time to move on to the main focus of the exam: machine learning. The material covered in this step makes up about 50% of the exam, and can be unintuitive for those with no background in math or statistics. However, the concepts all build on each other, and the more time you spend experimenting the easier it will be to understand the material. In no particular order, here are the ML resources I found most useful:
+Once you are comfortable with the basics of Python, it is time to move on to the main focus of the exam: machine learning. In particular, the exam has a heavy focus on tuning and debugging deep neural networks. The material covered in this step makes up about 50% of the exam, and can be unintuitive at first for those with no background in math or statistics. 
 
-**Machine Learning Guide (Podcast)**
-I found this podcast to be a phenomenal introduction to the ML field, and the creator is very intentional about providing the ‘forest for the trees’, providing context for how all the different pieces of ML go together. The podcast starts at the very basics of the field, with topics like Linear and Logistic Regression, which are crucial algorithms to understand before jumping off into the deep end.
+However, the concepts all build on each other, and the more time you spend experimenting the easier it will be to understand the material. Many of the resources in this section have a lot of overlap, and that is intentional. I find that the 'light-bulb' moments happen most often when you engage with the material in a few different ways. 
 
-**FastAI (Course/Book)**
-I am a huge fan of everything **FastAI** puts out, and I found the latest version of their **Practical Deep Learning for Coders** to be both informative and motivating. This course is completely focused on practical applications of Deep Learning:
+[**Machine Learning Guide (Podcast)**](http://ocdevel.com/mlg)
+
+I found this podcast to be a phenomenal introduction to the field of ML, and the creator is very intentional about keeping sight of the *forest for the trees*, providing context for how all the different pieces of ML go together. The podcast starts at the very basics of the field, with topics like Linear and Logistic Regression, which are crucial algorithms to understand before jumping off into the deep end of ML algorithms.
+
+[**FastAI (Course/Book)**](https://www.fast.ai)
+
+I am a huge fan of everything FastAI puts out, and I found the latest version of their *Practical Deep Learning for Coders* course to be both deeply informative and motivating. This course is obsessively focused on practical applications of Deep Learning. From the course website:
 
 > We teach almost everything through real examples. As we build out those examples, we go deeper and deeper, and we'll show you how to make your projects better and better. This means that you'll be gradually learning all the theoretical foundations you need, in context, in such a way that you'll see why it matters and how it works.
 
-This course leaves you with a good understanding of what Deep Learning is, why it is so useful, and how to apply Deep Learning to real-world problems. I recommend taking your time with this course - the more you put in, the more you will get out.
+This course leaves you with a good understanding of what Deep Learning is, why it has become so powerful in recent years, and how to apply concepts like [transfer learning](https://en.wikipedia.org/wiki/Transfer_learning) to achieve state of the art results in areas like computer vision. I recommend taking your time with this course - the more you put in, the more you will get out.
 
-**Deep Learning with Python (Book)**
-Another resource I found useful was **Francois Chollets** Deep Learning with Python book. PICK UP HERE!
+[**Deep Learning with Python (Book)**](https://www.amazon.com/Deep-Learning-Python-Francois-Chollet/dp/1617294438)
 
-**Neural Networks from Scratch (Book)**
+Another resource I found useful was François Chollet's *Deep Learning with Python* book. This book takes a similar approach to the FastAI course, focusing on practical application and examples over everything else. Chollet does a great job of using simple Python code snippets (instead of formulas) to explain the core mathematical concepts underlying modern neural network architectures.
 
-**Other useful resources:**Lex Fridman Podcast:Applied Data Ethics:3Blue1Brown
+[**Neural Networks from Scratch (Book)**](https://nnfs.io)
+
+At this point, you should have a solid foundational understanding of the basics of ML, and a reasonable understanding of modern deep learning architectures. In order to truly drill in your understanding of fundamental concepts such as the utility of activation functions, gradient descent, and backpropagation, you may find it useful to code a neural network from scratch. 
+
+In this book (which is still in draft form as of October 2020),[Harrison Kinsley](https://github.com/Sentdex) guides you through the construction of a neural network in pure Python, starting from a single neuron and building up from there. 
+
+**Other Interesting Resources**
+
+I believe that the above resources are more than sufficient to build enough understanding of ML in order to pass this certification. However, I found the following resources to also be useful/interesting when studying this part of the material:
+
+<PICK UP HERE>
+
+[**Lex Fridman Podcast**]()
+
+[**FastAI Applied Data Ethics (Course)**]()
+
+[**3Blue1Brown Neural Network (Video Series)**]()
+
+
 
 ------
 
