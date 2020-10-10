@@ -12,7 +12,7 @@ permalink: /about/
   
 .column {
   flex: 50%;
-  padding: 5px;
+  padding: 20px;
 }
 
 .img {
