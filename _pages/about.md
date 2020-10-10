@@ -11,7 +11,7 @@ permalink: /about/
 }
   
 .column {
-  flex: 33.33%;
+  flex: 50%;
   padding: 5px;
 }
 
