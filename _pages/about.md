@@ -5,6 +5,7 @@ permalink: /about/
 ---
 
 <style>
+
 .row {
   display: table-row;
 }
@@ -24,6 +25,12 @@ permalink: /about/
     width: 66%;
 }
 
+.frame {
+  height: 160px; /* Can be anything */
+  width: 160px; /* Can be anything */
+  position: relative;
+}
+
 .img {
   max-height: 100%;
   max-width: 100%;
@@ -37,14 +44,11 @@ permalink: /about/
   margin: auto;
 }
 
-
-
-
 </style>
 
 <div class="row">
 
-    <div class="column left">
+    <div class="column left frame">
         <img src="../images/avatar.jpg" alt="Avatar">
     </div>
     
