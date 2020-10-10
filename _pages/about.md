@@ -13,4 +13,6 @@ This blog is a place to collect my projects, thoughts, and ramblings on topics r
 
 You can find more about my background on [LinkedIn](https://www.linkedin.com/in/joshtkraft/), and my resume can be found [here](https://docs.google.com/document/d/1QPjd0Ydgf7HYkJ7bAt2_J0jOdcviuKXVbURgtfXkm08/edit?usp=sharing).
 
-<img src="../images/avatar.jpg" alt="Avatar">
+<p align="center">
+  <img width="260" src="../images/avatar.jpg">
+</p>
