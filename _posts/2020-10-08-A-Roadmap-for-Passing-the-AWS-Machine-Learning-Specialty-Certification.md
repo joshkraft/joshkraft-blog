@@ -77,8 +77,6 @@ In this book (which is still in draft form as of October 2020),[Harrison Kinsley
 
 I believe that the above resources are more than sufficient to build enough understanding of ML in order to pass this certification. However, I found the following resources to also be useful/interesting when studying this part of the material:
 
-<PICK UP HERE>
-
 [**Lex Fridman Podcast**]()
 
 [**FastAI Applied Data Ethics (Course)**]()
