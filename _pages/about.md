@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 <p align="center">
-  <img width="200" src="../images/avatar.jpg">
+  <img width="240" src="../images/avatar.jpg">
 </p>
 
 **My name is Josh Kraft**. 

@@ -23,13 +23,17 @@ AWS reccomends '1-2 years of experience developing, architecting, or running ML/
 
 After passing this exam myself, I believe the best way to approach this certification is through an indirect approach, starting with Python and ML before delving into the AWS side of things:
 
-1. Become proficient(ish) in Python.
-2. Study ML until you can explain the core concepts/algorithms to a friend.
-3. Learn the AWS services/algorithms relevant to this exam.
-4. Read up on Machine Learning Engineering concepts.
-5. Take the AWS practice exam. If it goes well, take the real exam.
+#### Step 1: Become proficient(ish) in Python.
 
-Most of these resources are free. Paid resources will be denoted by a dollar sign ($).
+#### Step 2: Study ML until you can explain the key concepts/algorithms to a friend.
+
+#### Step 3: Learn the AWS content.
+
+#### Step 4: Read up on Machine Learning Engineering.
+
+#### Step 5: Take the AWS practice exam, then the real thing.
+
+*Most of these resources are free. Paid resources will be denoted by a dollar sign ($).
 
 ------
 
@@ -57,7 +61,7 @@ This course provides a better starting point for those with absolutely no progra
 
 ------
 
-## 2. Study ML until you can explain the core concepts/algorithms to a friend.
+## 2. Study ML until you can explain the key concepts/algorithms to a friend.
 
 Once you are comfortable with the basics of Python, it is time to move on to the main focus of the exam: machine learning. In particular, the exam has a heavy focus on tuning and debugging deep neural networks. The material covered in this step makes up about 50% of the exam, and can be unintuitive at first for those with no background in math or statistics. 
 
@@ -105,7 +109,7 @@ This series of videos, produced by [Grant Sanderson](https://www.3blue1brown.com
 
 ------
 
-## 3. Learn the AWS services/algorithms relevant to this exam.
+## Step 3: Learn the relevant AWS content.
 
 The other 50% of the exam covers the AWS services relevant to training, tuning, debugging, and deploying models in the AWS cloud. 
 
@@ -127,13 +131,13 @@ This repository of example notebooks is a phenomenal resource for getting hands-
 
 ------
 
-## 4. Read up on Machine Learning Engineering concepts.
+## Step 4. Read up on Machine Learning Engineering.
 
 To tie everything together, I would strongly reccomend reading the [**Machine Learning Engineering book**](http://www.mlebook.com/wiki/doku.php) by [Andriy Burkov](https://twitter.com/burkov). This book is an incredible resource for learning about the stumbling blocks of deploying ML systems at scale, in production. **These concepts are tested heavily on the exam**, and are not easy to learn without industry experience. The book is distriuted on the 'read-first, buy-layer' principle, so you are free to read the book and only purchase if you find it to be useful.
 
 ------
 
-## 5. Take the AWS practice exam. If it goes well, take the real exam.
+## Step 5: Take the AWS practice exam, then the real thing.
 
 At this point, you should be ready to take (and pass) the AWS Machine Learning - Specialty certification. Since unofficial practice exams are so hard to come by for this exam, I would reccomend shelling out the $40 USD to take the official AWS practice exam.
 
