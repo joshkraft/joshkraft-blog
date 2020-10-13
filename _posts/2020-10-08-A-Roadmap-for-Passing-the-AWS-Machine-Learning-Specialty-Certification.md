@@ -45,7 +45,7 @@ The first thing to note about this exam is that ~50% of the questions are about 
 
 
 
-![Exam Content](images/blog_posts/AWS_Machine_Learning_Certification_Roadmap/exam_breakdown_chart.png)
+![]({{ site.url }}{{ site.baseurl }}/images/blog_posts/AWS_Machine_Learning_Certification_Roadmap/exam_breakdown_chart.png)
 
 
 
