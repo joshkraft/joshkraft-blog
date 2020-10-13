@@ -38,15 +38,9 @@ In this post, I will propose a road map for preparing for this exam, from the gr
 
 The first thing to note about this exam is that ~50% of the questions are about ML concepts. Here is a rough breakdown of the content on this exam:
 
-![Content Breakdown](../images/blog_posts/AWS_Machine_Learning_Certification_Roadmap/exam_breakdown_chart.png)
-
-
-
 
 
 ![]({{ site.url }}{{ site.baseurl }}/images/blog_posts/AWS_Machine_Learning_Certification_Roadmap/exam_breakdown_chart.png)
-
-
 
 
 
@@ -55,13 +49,13 @@ As such, it makes sense to start your studying by building understanding of the 
 1. Reading and dissecting mathematical formulas (theory)
 2. Reading and experimenting with implementations in code (application)
 
-For the most people, option 2 is the best way to get started, as it will allow you to start experimenting with the material on your own. Then, you can pick up on the math as it becomes necessary along the way.
+For the most people, option 2 is the best way to get started, as it will allow you to start experimenting with the material on your own right away. Then, you can pick up on the math as it becomes necessary (and useful!) along the way.
 
 Python is not the only option for this stage. However, Python is currently the go-to language for most ML practitioners and libraries, so the resources that you come across when studying ML will likely be written in Python. 
 
 Luckily, Python has a relatively short learning curve, and can be used to do just about anything. When you feel comfortable with the basics of Python, go ahead and move on to the next section. If you start working on the ML resources below and feel held back by your lack of Python experience, you can always return to this section for a few more days/weeks/months. 
 
->**Note:** You will not see any code on the exam. This is not a required prerequisite. However, the exam expects a deep understanding of ML concepts, and being able to read/write code in Python is the fastest way for most people to build that intuition.
+>**Note:** You will not see any code on the exam. This is not a required prerequisite. However, the exam expects a deep understanding of ML concepts, and being able to read, write, and understand code in Python is the fastest way for most people to build that intuition.
 
 ### Reccomended Python Resources
 
@@ -79,17 +73,13 @@ This course provides a better starting point for those with absolutely no progra
 
 Once you are comfortable with the basics of Python, it is time to move on to the main focus of the exam: ML. In particular, the exam has a heavy focus on **tuning and debugging deep neural networks**. 
 
-In order to get to the point where you can understand how to optimize these complex systems, you will need to have a solid foundation in ML fundamentals to build from. As such, I reccomend that you start at the basics (linear and logistic regression), and keep studying/practicing until you feel comortable
+In order to get to the point where you can understand how to optimize these complex systems, you will need to have a solid foundation in ML fundamentals to build from. As such, I reccomend that you start at the basics (linear and logistic regression), and keep studying/practicing until you feel comortable explaining the main deep learning architectures to a friend.
 
-
-
-The material covered in this step makes up about 50% of the exam, and can be unintuitive at first for those with no background in math or statistics. 
-
-However, the concepts all build on each other, and the more time you spend experimenting the easier it will be to understand the material. Many of the resources in this section have a lot of overlap, and that is intentional. I find that the 'light-bulb' moments happen most often when you engage with the material in a few different ways. 
+This material can be tough at first. However, the concepts all build on each other, and the more time you spend experimenting the faster you will gain understanding. Many of the resources in this section have a lot of overlap, and that is intentional. I find that the 'light-bulb' moments happen most often when you engage with the material in a few different ways. 
 
 ### Reccomended Machine Learning Resources
 
-[**Machine Learning Guide (Podcast)**](http://ocdevel.com/mlg)
+![]({{ site.url }}{{ site.baseurl }}/images/blog_posts/AWS_Machine_Learning_Certification_Roadmap/ml_guide_podcast.jpg)[**Machine Learning Guide (Podcast)**](http://ocdevel.com/mlg)
 
 I found this podcast to be a phenomenal introduction to the field of ML, and the creator is very intentional about keeping sight of the *forest for the trees*, providing context for how all the different pieces of ML go together. The podcast starts at the very basics of the field, with topics like Linear and Logistic Regression, which are crucial algorithms to understand before jumping off into the deep end of ML algorithms.
 
