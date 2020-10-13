@@ -139,11 +139,11 @@ The other 50% of the exam covers the AWS services relevant to training, tuning, 
 
 This course provides a good overview of the breadth of AWS knowledge you need to pass this certification exam. However, this course is best used as an *extended syllabus* for your studying. You will likely need to spend lots of additional time studying the material covered in each section of the course, using resources such as the [official AWS documentation](https://docs.aws.amazon.com).
 
-[**AWS SageMaker Developer Guide (Documentation) **](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html)
+[**AWS SageMaker Developer Guide (Documentation)**](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html)
 
 This site provides an exhaustive look at each component of SageMaker, which is the main AWS service tested in this exam. While I would not reccomend reading all of the documentation from start to finish, I would reccomend saving this site and referring to it often.
 
-[**AWS SageMaker Examples (Github Repo) **](https://github.com/aws/amazon-sagemaker-examples)
+[**AWS SageMaker Examples (Github Repo)**](https://github.com/aws/amazon-sagemaker-examples)
 
 This repository of example notebooks is a phenomenal resource for getting hands-on with SageMaker, and tinkering with the built-in algorithms that you will need to know for the test. You may find it useful to experiment with a sample notebook of each of the main built-in algorithms.
 
