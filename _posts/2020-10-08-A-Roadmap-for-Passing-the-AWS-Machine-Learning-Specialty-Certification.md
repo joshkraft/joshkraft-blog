@@ -91,7 +91,7 @@ I found this podcast to be a phenomenal introduction to the field of ML, and the
 
 I am a huge fan of everything FastAI puts out, and I found the latest version of their *Practical Deep Learning for Coders* course to be both deeply informative and motivating. This course is obsessively focused on practical applications of Deep Learning:
 
-> twitter: https://twitter.com/jeremyphoward/status/1296884279784255488
+<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">As always, we use a whole game approach. In this course, we start by showing how to use a complete, working, very usable, state-of-the-art deep learning network to solve real-world problems, using simple tools. And then we gradually dig deeper and deeper<a href="https://t.co/j8R9KlwFVS">https://t.co/j8R9KlwFVS</a></p>&mdash; Jeremy Howard (@jeremyphoward) <a href="https://twitter.com/jeremyphoward/status/1296884279784255488?ref_src=twsrc%5Etfw">August 21, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 This course leaves you with a good understanding of what Deep Learning is, why it has become so powerful in recent years, and how to apply concepts like [transfer learning](https://en.wikipedia.org/wiki/Transfer_learning) to achieve state of the art results in areas like computer vision. I recommend taking your time with this course - the more you put in, the more you will get out.
 
