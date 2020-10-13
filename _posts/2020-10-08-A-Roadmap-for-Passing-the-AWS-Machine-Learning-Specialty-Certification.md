@@ -5,7 +5,7 @@ description: "Reccomended resources for passing for the AWS Machine Learning Spe
 layout: post
 toc: false
 comments: true
-image: ../images/blog_posts/AWS_Machine_Learning_Certification_Roadmap/AWS-Certified_Machine-Learning_Specialty_512x512.6ac490d15fe033a3d67ca544ecd0bcbcb10d391a.png
+image: images/blog_posts/AWS_Machine_Learning_Certification_Roadmap/AWS-Certified_Machine-Learning_Specialty_512x512.6ac490d15fe033a3d67ca544ecd0bcbcb10d391a.png
 hide: false
 search_exclude: true
 categories: [AWS, Machine Learning]
@@ -43,6 +43,14 @@ The first thing to note about this exam is that ~50% of the questions are about 
 
 
 
+
+
+![Exam Content](images/blog_posts/AWS_Machine_Learning_Certification_Roadmap/exam_breakdown_chart.png)
+
+
+
+
+
 As such, it makes sense to start your studying by building understanding of the core concepts in ML. Speaking broadly, there are two ways to build such an understanding:
 
 1. Reading and dissecting mathematical formulas (theory)
@@ -70,7 +78,13 @@ This course provides a better starting point for those with absolutely no progra
 
 ## 2. Study ML until you can explain the key concepts/algorithms to a friend.
 
-Once you are comfortable with the basics of Python, it is time to move on to the main focus of the exam: ML. In particular, the exam has a heavy focus on tuning and debugging deep neural networks. The material covered in this step makes up about 50% of the exam, and can be unintuitive at first for those with no background in math or statistics. 
+Once you are comfortable with the basics of Python, it is time to move on to the main focus of the exam: ML. In particular, the exam has a heavy focus on **tuning and debugging deep neural networks**. 
+
+In order to get to the point where you can understand how to optimize these complex systems, you will need to have a solid foundation in ML fundamentals to build from. As such, I reccomend that you start at the basics (linear and logistic regression), and keep studying/practicing until you feel comortable
+
+
+
+The material covered in this step makes up about 50% of the exam, and can be unintuitive at first for those with no background in math or statistics. 
 
 However, the concepts all build on each other, and the more time you spend experimenting the easier it will be to understand the material. Many of the resources in this section have a lot of overlap, and that is intentional. I find that the 'light-bulb' moments happen most often when you engage with the material in a few different ways. 
 
