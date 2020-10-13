@@ -22,13 +22,13 @@ In this post, I will propose a road map for preparing for this exam, from the gr
 
 #### [Step 1: Become proficient(ish) in Python.](#step1)
 
-#### Step 2: Study ML until you can explain the key concepts/algorithms to a friend.
+#### [Step 2: Study ML until you can explain the key concepts/algorithms to a friend.](#step2)
 
-#### Step 3: Learn the AWS content.
+#### [Step 3: Learn the AWS content.](#step3)
 
-#### Step 4: Read up on ML Engineering.
+#### [Step 4: Read up on ML Engineering.](#step4)
 
-#### Step 5: Take the AWS practice exam, then the real thing.
+#### [Step 5: Take the AWS practice exam, then the real thing.](#step5)
 
 *Most of these resources are free. Paid resources will be denoted by a dollar sign ($).
 
@@ -71,6 +71,8 @@ This course provides a better starting point for those with absolutely no progra
 
 ------
 
+<a name="step2"></a>
+
 ## 2. Study ML until you can explain the key concepts/algorithms to a friend.
 
 Once you are comfortable with the basics of Python, it is time to move on to the main focus of the exam: ML. In particular, the exam has a heavy focus on **tuning and debugging deep neural networks**. 
@@ -83,13 +85,13 @@ This material can be tough at first. However, the concepts all build on each oth
 
 [**Machine Learning Guide (Podcast)**](http://ocdevel.com/mlg)
 
-![]({{ site.url }}{{ site.baseurl }}/images/blog_posts/AWS_Machine_Learning_Certification_Roadmap/ml_guide_podcast.jpg)I found this podcast to be a phenomenal introduction to the field of ML, and the creator is very intentional about keeping sight of the *forest for the trees*, providing context for how all the different pieces of ML go together. The podcast starts at the very basics of the field, with topics like Linear and Logistic Regression, which are crucial algorithms to understand before jumping off into the deep end of ML algorithms.
+I found this podcast to be a phenomenal introduction to the field of ML, and the creator is very intentional about keeping sight of the *forest for the trees*, providing context for how all the different pieces of ML go together. The podcast starts at the very basics of the field, with topics like Linear and Logistic Regression, which are crucial algorithms to understand before jumping off into the deep end of ML algorithms.
 
 [**Practical Deep Learning for Coders by FastAI (Course/Book)**](https://www.fast.ai)
 
-I am a huge fan of everything FastAI puts out, and I found the latest version of their *Practical Deep Learning for Coders* course to be both deeply informative and motivating. This course is obsessively focused on practical applications of Deep Learning. From the course website:
+I am a huge fan of everything FastAI puts out, and I found the latest version of their *Practical Deep Learning for Coders* course to be both deeply informative and motivating. This course is obsessively focused on practical applications of Deep Learning:
 
-> We teach almost everything through real examples. As we build out those examples, we go deeper and deeper, and we'll show you how to make your projects better and better. This means that you'll be gradually learning all the theoretical foundations you need, in context, in such a way that you'll see why it matters and how it works.
+> twitter: https://twitter.com/jeremyphoward/status/1296884279784255488
 
 This course leaves you with a good understanding of what Deep Learning is, why it has become so powerful in recent years, and how to apply concepts like [transfer learning](https://en.wikipedia.org/wiki/Transfer_learning) to achieve state of the art results in areas like computer vision. I recommend taking your time with this course - the more you put in, the more you will get out.
 
@@ -121,33 +123,41 @@ This series of videos, produced by [Grant Sanderson](https://www.3blue1brown.com
 
 ------
 
+<a name="step3"></a>
+
 ## Step 3: Learn the relevant AWS content.
 
 The other 50% of the exam covers the AWS services relevant to training, tuning, debugging, and deploying models in the AWS cloud. 
 
-> **Note**: At the time of this writing, AWS offers a 50% discount on a future certification exam after passing any of the AWS certifications. As such, it may make sense to actually take one of the entry level AWS exams first (such as Cloud Practitioner, which costs $100), in order to learn the fundamental AWS services. Assuming you pass that exam, you can then use the 50% discount to sign up for the Machine Learning Specialty exam. All in, you would spend $250 for 2 certifications, rather than $300 for 1 certification.
+> **Note**: At the time of this writing, AWS offers a 50% discount on a future certification exam after passing any of the AWS certifications. As such, it may make sense to actually take one of the entry level AWS exams first (such as Cloud Practitioner, which costs $100), in order to learn the fundamental AWS services. 
+>
+> Assuming you pass that exam, you can then use the 50% discount to sign up for the Machine Learning Specialty exam. All in, you would spend $250 for 2 certifications, rather than $300 for 1 certification.
 
 ### Reccomended AWS Resources
 
 [**AWS Certified Machine Learning Specialty 2020 - Hands On! (Course) ($)**](https://www.udemy.com/course/aws-machine-learning/)
 
-This course provides a good overview of the breadth of AWS knowledge you need to pass this certification exam. However, this course is best used as a *syllabus* for your AWS studying. You will likely need to spend lots of time studying the material covered in each section of the course in the actual AWS documentation, as the course covers everything at a pretty broad level.
+This course provides a good overview of the breadth of AWS knowledge you need to pass this certification exam. However, this course is best used as an *extended syllabus* for your studying. You will likely need to spend lots of additional time studying the material covered in each section of the course, using resources such as the [official AWS documentation](https://docs.aws.amazon.com).
 
 [**AWS SageMaker Developer Guide (Documentation) **](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html)
 
-This site is an exhaustive look at each component of SageMaker, which is the main AWS service tested in this exam. While I would not reccomend reading all of the documentation from start to finish, I would reccomend saving this site and referring to it often.
+This site provides an exhaustive look at each component of SageMaker, which is the main AWS service tested in this exam. While I would not reccomend reading all of the documentation from start to finish, I would reccomend saving this site and referring to it often.
 
 [**AWS SageMaker Examples (Github Repo) **](https://github.com/aws/amazon-sagemaker-examples)
 
-This repository of example notebooks is a phenomenal resource for getting hands-on with SageMaker, and tinkering with the built-in algorithms that you will need to know for the test.
+This repository of example notebooks is a phenomenal resource for getting hands-on with SageMaker, and tinkering with the built-in algorithms that you will need to know for the test. You may find it useful to experiment with a sample notebook of each of the main built-in algorithms.
 
 ------
+
+<a name="step4"></a>
 
 ## Step 4. Read up on ML Engineering.
 
-To tie everything together, I would strongly reccomend reading the [**Machine Learning Engineering book**](http://www.mlebook.com/wiki/doku.php) by [Andriy Burkov](https://twitter.com/burkov). This book is an incredible resource for learning about the stumbling blocks of deploying ML systems at scale, in production. **These concepts are tested heavily on the exam**, and are not easy to learn without industry experience. The book is distriuted on the 'read-first, buy-layer' principle, so you are free to read the book and only purchase if you find it to be useful.
+To tie everything together, I would strongly reccomend reading the [**Machine Learning Engineering book**](http://www.mlebook.com/wiki/doku.php) by [Andriy Burkov](https://twitter.com/burkov). This book is an incredible resource for learning about common stumbling blocks when deploying ML systems at scale, in production. **These concepts are tested heavily on the exam**, and are not easy to learn without industry experience. The book is distriuted on the 'read-first, buy-layer' principle, so you are free to read the book and only purchase it if you find it to be useful.
 
 ------
+
+<a name="step5"></a>
 
 ## Step 5: Take the AWS practice exam, then the real thing.
 
