@@ -34,11 +34,9 @@ In this post, I will propose a road map for preparing for this exam, from the gr
 
 ------
 
-<a name="step1">
+<a name="step1"></a>
 
 ## 1. Become proficient(ish) in Python.
-
-</a>
 
 The first thing to note about this exam is that ~50% of the questions are about ML concepts. Here is a rough breakdown of the content on this exam:
 
@@ -85,7 +83,7 @@ This material can be tough at first. However, the concepts all build on each oth
 
 [**Machine Learning Guide (Podcast)**](http://ocdevel.com/mlg)
 
-![]({{ site.url }}{{ site.baseurl }}/images/blog_posts/AWS_Machine_Learning_Certification_Roadmap/ml_guide_podcast.jpg) I found this podcast to be a phenomenal introduction to the field of ML, and the creator is very intentional about keeping sight of the *forest for the trees*, providing context for how all the different pieces of ML go together. The podcast starts at the very basics of the field, with topics like Linear and Logistic Regression, which are crucial algorithms to understand before jumping off into the deep end of ML algorithms.
+![]({{ site.url }}{{ site.baseurl }}/images/blog_posts/AWS_Machine_Learning_Certification_Roadmap/ml_guide_podcast.jpg)I found this podcast to be a phenomenal introduction to the field of ML, and the creator is very intentional about keeping sight of the *forest for the trees*, providing context for how all the different pieces of ML go together. The podcast starts at the very basics of the field, with topics like Linear and Logistic Regression, which are crucial algorithms to understand before jumping off into the deep end of ML algorithms.
 
 [**Practical Deep Learning for Coders by FastAI (Course/Book)**](https://www.fast.ai)
 
