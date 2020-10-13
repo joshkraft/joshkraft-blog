@@ -20,7 +20,7 @@ AWS reccomends "*1-2 years of experience developing, architecting, or running ML
 
 In this post, I will propose a road map for preparing for this exam, from the ground up, assuming no knowledge of of programming, ML, or AWS. This road map will be focused on *understanding*, rather than *memorization*. This is not the shortest or fastest path, but rather the path that I felt left me with deepest understanding of what ML really is, how it works under the hood, and why AWS can be useful for addressing some of the common pain points in the modern ML process. Feel free to skip any steps that are not useful to you. 
 
-#### (Step 1: Become proficient(ish) in Python.)[#1.-become-proficient(ish)-in-python.]
+#### [Step 1: Become proficient(ish) in Python.](#1.-become-proficient(ish)-in-python.)
 
 #### Step 2: Study ML until you can explain the key concepts/algorithms to a friend.
 
