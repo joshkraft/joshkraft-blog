@@ -8,7 +8,7 @@ comments: true
 image: images/blog_posts/AWS_Machine_Learning_Certification_Roadmap/AWS-Certified_Machine-Learning_Specialty_512x512.6ac490d15fe033a3d67ca544ecd0bcbcb10d391a.png
 hide: false
 search_exclude: true
-categories: [AWS, Machine Learning]
+categories: 
 ---
 
 ## Overview
