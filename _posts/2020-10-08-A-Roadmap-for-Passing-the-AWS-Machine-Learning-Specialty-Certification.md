@@ -79,9 +79,9 @@ This material can be tough at first. However, the concepts all build on each oth
 
 ### Reccomended Machine Learning Resources
 
-![]({{ site.url }}{{ site.baseurl }}/images/blog_posts/AWS_Machine_Learning_Certification_Roadmap/ml_guide_podcast.jpg)[**Machine Learning Guide (Podcast)**](http://ocdevel.com/mlg)
+[**Machine Learning Guide (Podcast)**](http://ocdevel.com/mlg)
 
-I found this podcast to be a phenomenal introduction to the field of ML, and the creator is very intentional about keeping sight of the *forest for the trees*, providing context for how all the different pieces of ML go together. The podcast starts at the very basics of the field, with topics like Linear and Logistic Regression, which are crucial algorithms to understand before jumping off into the deep end of ML algorithms.
+![]({{ site.url }}{{ site.baseurl }}/images/blog_posts/AWS_Machine_Learning_Certification_Roadmap/ml_guide_podcast.jpg) I found this podcast to be a phenomenal introduction to the field of ML, and the creator is very intentional about keeping sight of the *forest for the trees*, providing context for how all the different pieces of ML go together. The podcast starts at the very basics of the field, with topics like Linear and Logistic Regression, which are crucial algorithms to understand before jumping off into the deep end of ML algorithms.
 
 [**Practical Deep Learning for Coders by FastAI (Course/Book)**](https://www.fast.ai)
 
