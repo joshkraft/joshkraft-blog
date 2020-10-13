@@ -1,5 +1,4 @@
 ---
-
 title: "A Roadmap for Passing the AWS Machine Learning Specialty Certification"
 description: "Reccomended resources for passing for the AWS Machine Learning Specialty."
 layout: post
