@@ -13,15 +13,13 @@ categories: [AWS, Machine Learning]
 
 ## Overview
 
-I recently passed the [**AWS Certified Machine Learning - Specialty**](https://aws.amazon.com/certification/certified-machine-learning-specialty/) exam. Given the relative newness of this exam (released in March 2019), I found it difficult to come across quality resources around what sort of topics are tested on the exam, as well as the depth to which each topic is covered. In this post, I hope to provide a road-map for others that are studying for this exam. 
-
-On the [**certification homepage**](https://aws.amazon.com/certification/certified-machine-learning-specialty/), AWS gives the following description of the exam:
+I recently passed the [**AWS Certified Machine Learning - Specialty**](https://aws.amazon.com/certification/certified-machine-learning-specialty/) exam. Given the relative newness of this exam (released in March 2019), I found it difficult to come across good resources around what sort of topics are tested on the exam, as well as the depth to which each topic is covered. On the [**certification homepage**](https://aws.amazon.com/certification/certified-machine-learning-specialty/), AWS gives the following description of the exam:
 
 > *The AWS Certified Machine Learning - Specialty certification is intended for individuals who perform a development or data science role. It validates a candidate's ability to design, implement, deploy, and maintain machine learning (ML) solutions for given business problems.*
 
-AWS reccomends '1-2 years of experience developing, architecting, or running ML/deep learning workloads on the AWS Cloud' before attempting this exam. However, many people that are interested in this certification do not have 1-2 years of experience deploying ML on AWS, and are pursuing this certification in order to gain such experience. How should they proceed?
+AWS reccomends "*1-2 years of experience developing, architecting, or running ML/deep learning workloads on the AWS Cloud* " before attempting this exam. However, many people that are interested in this certification do not have 1-2 years of experience deploying machine learning (ML) on AWS, and are pursuing this certification as a means to gain such experience. How should they proceed?
 
-After passing this exam myself, I believe the best way to approach this certification is through an indirect approach, starting with Python and ML before delving into the AWS side of things:
+In this post, I will propose a road map for preparing for this exam, from the ground up, assuming no knowledge of of programming, ML, or AWS. This road map will be focused on *understanding*, rather than *memorization*. This is not the shortest or fastest path, but rather the path that I felt left me with deepest understanding of what ML really is, how it works under the hood, and why AWS can be useful for addressing some of the common pain points in the modern ML process. Feel free to skip any steps that are not useful to you. 
 
 #### Step 1: Become proficient(ish) in Python.
 
@@ -29,7 +27,7 @@ After passing this exam myself, I believe the best way to approach this certific
 
 #### Step 3: Learn the AWS content.
 
-#### Step 4: Read up on Machine Learning Engineering.
+#### Step 4: Read up on ML Engineering.
 
 #### Step 5: Take the AWS practice exam, then the real thing.
 
@@ -39,13 +37,22 @@ After passing this exam myself, I believe the best way to approach this certific
 
 ## 1. Become proficient(ish) in Python.
 
-The first thing to note about this exam is that ~50% of the questions are about ML concepts, with no AWS crossover. Speaking broadly, the two ways to build understanding of ML concepts is through reading mathematical formulas (theory), or implementations in code (application). 
+The first thing to note about this exam is that ~50% of the questions are about ML concepts. Here is a rough breakdown of the content on this exam:
 
-For the vast majority of people looking to enter the field of ML, learning to code (and read code) first is a great option, as it will allow you to start experimenting with the material on your own. Then, you can pick up on the math as it becomes necessary along the way.
+![Content Breakdown](../images/blog_posts/AWS_Machine_Learning_Certification_Roadmap/exam_breakdown_chart.png)
 
-Currently, Python is the go-to language for most machine learning practitioners and libraries, so the resources that you come across when studying ML will likely be written in Python. Luckily, Python has a relatively short learning curve, and can be used to do just about anything.
 
-When you feel comfortable with the basics of Python, go ahead and move on to the next section. If you start working on the ML resources below and feel held back by your lack of Python experience, you can always return to this section for a few more days/weeks/months. 
+
+As such, it makes sense to start your studying by building understanding of the core concepts in ML. Speaking broadly, there are two ways to build such an understanding:
+
+1. Reading and dissecting mathematical formulas (theory)
+2. Reading and experimenting with implementations in code (application)
+
+For the most people, option 2 is the best way to get started, as it will allow you to start experimenting with the material on your own. Then, you can pick up on the math as it becomes necessary along the way.
+
+Python is not the only option for this stage. However, Python is currently the go-to language for most ML practitioners and libraries, so the resources that you come across when studying ML will likely be written in Python. 
+
+Luckily, Python has a relatively short learning curve, and can be used to do just about anything. When you feel comfortable with the basics of Python, go ahead and move on to the next section. If you start working on the ML resources below and feel held back by your lack of Python experience, you can always return to this section for a few more days/weeks/months. 
 
 >**Note:** You will not see any code on the exam. This is not a required prerequisite. However, the exam expects a deep understanding of ML concepts, and being able to read/write code in Python is the fastest way for most people to build that intuition.
 
@@ -63,7 +70,7 @@ This course provides a better starting point for those with absolutely no progra
 
 ## 2. Study ML until you can explain the key concepts/algorithms to a friend.
 
-Once you are comfortable with the basics of Python, it is time to move on to the main focus of the exam: machine learning. In particular, the exam has a heavy focus on tuning and debugging deep neural networks. The material covered in this step makes up about 50% of the exam, and can be unintuitive at first for those with no background in math or statistics. 
+Once you are comfortable with the basics of Python, it is time to move on to the main focus of the exam: ML. In particular, the exam has a heavy focus on tuning and debugging deep neural networks. The material covered in this step makes up about 50% of the exam, and can be unintuitive at first for those with no background in math or statistics. 
 
 However, the concepts all build on each other, and the more time you spend experimenting the easier it will be to understand the material. Many of the resources in this section have a lot of overlap, and that is intentional. I find that the 'light-bulb' moments happen most often when you engage with the material in a few different ways. 
 
@@ -131,7 +138,7 @@ This repository of example notebooks is a phenomenal resource for getting hands-
 
 ------
 
-## Step 4. Read up on Machine Learning Engineering.
+## Step 4. Read up on ML Engineering.
 
 To tie everything together, I would strongly reccomend reading the [**Machine Learning Engineering book**](http://www.mlebook.com/wiki/doku.php) by [Andriy Burkov](https://twitter.com/burkov). This book is an incredible resource for learning about the stumbling blocks of deploying ML systems at scale, in production. **These concepts are tested heavily on the exam**, and are not easy to learn without industry experience. The book is distriuted on the 'read-first, buy-layer' principle, so you are free to read the book and only purchase if you find it to be useful.
 
