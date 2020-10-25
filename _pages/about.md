@@ -21,7 +21,7 @@ permalink: /about/
 <div class="row">
   <div class="column">
     <img src="../images/avatar.jpg">
-    <p><b>My name is Josh Kraft</b>.</p>
+    <p style="text-align:center"><b>My name is Josh Kraft</b>.</p>
   </div>
   <div class="column">
 
