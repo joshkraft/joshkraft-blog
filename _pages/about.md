@@ -21,9 +21,9 @@ permalink: /about/
 <div class="row">
   <div class="column">
     <img src="../images/avatar.jpg">
+    <p><b>My name is Josh Kraft</b>.</p>
   </div>
   <div class="column">
-    <p><b>My name is Josh Kraft</b>.</p>
 
     <p>I am a passionate generalist, currently interested in building scalable software solutions in the cloud. I work at <a href="https://www.ncino.com">nCino</a>, a leading fintech company built on the Salesforce platform. Previously, I was a Hollings Scholar with NOAA's <a href="https://www.esrl.noaa.gov">Earth System Research Laboratories</a>, where I worked on geospatial modeling to predict the origin of high-ozone air masses.</p>
 
