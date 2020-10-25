@@ -5,13 +5,17 @@ permalink: /about/
 ---
 <html>
 <style>
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 50%;
-}
+    .column {
+        float: left;
+        width: 50%;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
 </style>
 
 <div class="row">
@@ -20,18 +24,19 @@ permalink: /about/
   </div>
   <div class="column">
   <p>
-    **My name is Josh Kraft**. 
+    <b>My name is Josh Kraft</b>. 
 
-    I am a passionate generalist, currently interested in building scalable software solutions in the cloud. I work at **[nCino](https://www.ncino.com)**, a leading fintech company built on the Salesforce platform. Previously, I was a Hollings Scholar with NOAA's **[Earth System Research Laboratories](https://www.esrl.noaa.gov)**, where I worked on geospatial modeling to predict the origin of high-ozone air masses. 
+    I am a passionate generalist, currently interested in building scalable software solutions in the cloud. I work at <a href="https://www.ncino.com">nCino</a>, a leading fintech company built on the Salesforce platform. Previously, I was a Hollings Scholar with NOAA's <a href="https://www.esrl.noaa.gov">Earth System Research Laboratories</a>, where I worked on geospatial modeling to predict the origin of high-ozone air masses. 
 
     This blog is a place to collect my projects and thoughts relating to my current interests:
 
-    - Reproducibility in data science
-    - Low cost, high performance machine learning systems
-    - Interpretability vs. Accuracy in deep learning algorithms
+    <ul>
+        <li>Reproducibility in data projects</li>
+        <li>Low cost, high performance machine learning systems</li>
+        <li>Interpretability vs. Accuracy in deep learning algorithms</li>
+    </ul>
 
-    You can find more about my background on **[LinkedIn](https://www.linkedin.com/in/joshtkraft/)**, and my resume can be found **[here](https://docs.google.com/document/d/1QPjd0Ydgf7HYkJ7bAt2_J0jOdcviuKXVbURgtfXkm08/edit?usp=sharing)**.
-
+    You can find more about my background on <a href="https://www.linkedin.com/in/joshtkraft/">my LinkedIn</a>, and my resume can be found <a href="https://docs.google.com/document/d/1QPjd0Ydgf7HYkJ7bAt2_J0jOdcviuKXVbURgtfXkm08/edit?usp=sharing">here</a>.
     </p>
   </div>
 </div>
