@@ -3,6 +3,7 @@ layout: page
 title: About Me
 permalink: /about/
 ---
+<html>
 <style>
 .row {
   display: flex;
@@ -34,3 +35,4 @@ permalink: /about/
     </p>
   </div>
 </div>
+</html>
