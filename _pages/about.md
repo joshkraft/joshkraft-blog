@@ -30,6 +30,7 @@ permalink: /about/
     <p>This blog is a place to collect my projects and thoughts relating to my current interests:</p>
 
     <ul>
+        <li>Data ethics</li>
         <li>Reproducibility in data projects</li>
         <li>Low cost, high performance machine learning systems</li>
         <li>Interpretability vs. Accuracy in deep learning algorithms</li>
