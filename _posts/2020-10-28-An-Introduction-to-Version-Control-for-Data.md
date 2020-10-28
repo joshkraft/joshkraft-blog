@@ -6,6 +6,7 @@ toc: true
 comments: true
 hide: true
 search_exclude: true
+image: images/blog_posts/candidate_tweets/candidate_tweets_cover.png
 categories: data ethics
 ---
 
