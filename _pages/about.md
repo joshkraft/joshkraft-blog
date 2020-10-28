@@ -43,7 +43,6 @@ permalink: /about/
         <li>Data ethics</li>
         <li>Reproducibility in data projects</li>
         <li>Low cost, high performance machine learning systems</li>
-        <li>Interpretability vs. Accuracy in deep learning algorithms</li>
     </ul>
 
     <p>You can find more about my background on <a href="https://www.linkedin.com/in/joshtkraft/">my LinkedIn</a>, and my resume can be found <a href="https://docs.google.com/document/d/1QPjd0Ydgf7HYkJ7bAt2_J0jOdcviuKXVbURgtfXkm08/edit?usp=sharing">here</a>.</p>
