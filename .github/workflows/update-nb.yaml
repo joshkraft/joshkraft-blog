@@ -48,7 +48,7 @@ jobs:
       id: update_nb
       run: |
         papermill --kernel python3 _notebooks/2020-21-10-Candidate-Tweets.ipynb
-        git add _notebooks/2020-21-10-Candidate-Tweets.ipynbs
+        git add _notebooks/2020-21-10-Candidate-Tweets.ipynb
         
     - name: Create an issue if notebook update failure occurs
       if: github.event_name == 'schedule' && steps.update_nb.outputs.error_bool == 'true'
