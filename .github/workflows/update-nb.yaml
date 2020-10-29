@@ -39,7 +39,7 @@ jobs:
         sudo apt-get update -y
         sudo apt-get -y --force-yes install chromium-chromedriver
         npm install -g electron@6.1.4 orca
-        pip3 install matplotlib pandas ipykernel jupyter altair altair_saver jinja2 selenium numpy math requests pathlib statsmodels requests IPython datetime
+        pip3 install matplotlib pandas ipykernel jupyter altair altair_saver jinja2 selenium numpy requests pathlib statsmodels requests IPython datetime
         python3 -m ipykernel install --user --name python3
         sudo chmod -R 777 .
         
