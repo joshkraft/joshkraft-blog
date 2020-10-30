@@ -1,10 +1,10 @@
 name: Update Notebooks And Refresh Page
 on:
   schedule:
-    - cron:  '* * * * *'
+    - cron:  '0 6 * * *'
 
 
-jobs:
+jobs:s
   update-notebooks:
     if: github.event_name == 'schedule'
     runs-on: ubuntu-latest
