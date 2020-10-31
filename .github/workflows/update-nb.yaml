@@ -1,8 +1,8 @@
 name: Update Notebooks And Refresh Page
 on:
-  push
-  #schedule:
-   # - cron:  '* * * * *'
+
+  schedule:
+   - cron:  '* * * * *'
 
 
 jobs:
