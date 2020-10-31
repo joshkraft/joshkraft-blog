@@ -1,10 +1,11 @@
 name: Update Notebooks And Refresh Page
 on:
-  schedule:
-    - cron:  '0 6 * * *'
+  push
+  #schedule:
+   # - cron:  '* * * * *'
 
 
-jobs:s
+jobs:
   update-notebooks:
     if: github.event_name == 'schedule'
     runs-on: ubuntu-latest
@@ -82,6 +83,7 @@ jobs:s
       run: |
         rm -rf _site
         sudo chmod -R 777 .
+
     - name: Jekyll build
       uses: docker://hamelsmu/fastpages-jekyll
       with:
