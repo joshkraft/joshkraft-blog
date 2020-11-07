@@ -45,7 +45,7 @@ permalink: /about/
         <li>Low cost, high performance machine learning systems</li>
     </ul>
 
-    <p>You can find more about my background on <a href="https://www.linkedin.com/in/joshtkraft/">my LinkedIn</a>, and my resume can be found <a href="https://docs.google.com/document/d/1QPjd0Ydgf7HYkJ7bAt2_J0jOdcviuKXVbURgtfXkm08/edit?usp=sharing">here</a>.</p>
+    <p>You can find more about my background on <a href="https://www.linkedin.com/in/joshtkraft/">my LinkedIn</a>, and my resume can be found <a href="https://drive.google.com/file/d/1I65R9kv9rE_HA8f11GQE8xFqUSRiTM0t/view">here</a>.</p>
 
   </div>
 </div>

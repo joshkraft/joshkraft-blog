@@ -9,11 +9,10 @@ search_exclude: true
 categories: data ethics
 ---
 
-## Overview
+## Overvi [data.csv](../../../../.Trash/data.csv) ew
 
-In <link to talk>, <author> states that 'AI is both a jetpack and a blindfold'. If I were to attempt to unpack this, I would interpret the meaning to be that the technology is progressing faster than the understanding of it's implications are. For example, ML algorithms are already engrained in decision making process. It is clear that these algorithms can add value - what is not clear, however, is how these algorithms can and should be held accountable for their decisions. 
+In this book, Hararai makes the following claim: 
 
-A first step towards this is implementing version control in all parts of the machine learning process - data, algorithms, config, packages, etc.
 
 
 - why DVC
