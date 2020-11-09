@@ -10,7 +10,7 @@ search_exclude: true
 categories: data collection
 ---
 
-> **Summary**
+## Summary
 > In this blogpost, I will outline why **Github Actions can be useful for small-scale data collection projects**, by offering a free way to repeatedly run small data collection scripts in the cloud and push the data into a repository. Then, I will walk through how this tool can be used for **scraping Twitter data**, including how to **securely store API credentials** in Github.
 
 ## Motivation
