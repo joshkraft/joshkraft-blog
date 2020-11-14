@@ -1,52 +1,18 @@
 ---
 layout: page
-title: About Me
+title: About
 permalink: /about/
 ---
-<html>
-<style>
-    .column {
-        float: left;
-        width: 50%;
-      }
-      
-      /* Clear floats after the columns */
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
+![]({{site.baseurl}}/images/avatar.jpg)
 
-    .verticalcenter {
-        display: table-cell;
-        height: 400px;
-        vertical-align: middle;
-    }
+My name is **Josh Kraft**. I am a passionate generalist, currently interested in ML and cloud software solutions. I hold a number of cloud certifications, including [AWS Machine Learning Speciality](https://aws.amazon.com/certification/certified-machine-learning-specialty) and [Salesforce Platform Developer II](https://trailhead.salesforce.com/en/help?article=Salesforce-Certified-Platform-Developer-II-Exam-Guide).
 
-</style>
+I currently lead a team of Support Engineers at [nCino](https://www.ncino.com), a leading fintech company built on the Salesforce platform. Previously, I was a Hollings Scholar with NOAA's [Earth Systems Research Laboratory](https://www.esrl.noaa.gov), where I worked on geospatial modeling to predict the origin of high-ozone air masses.
 
-<div class="row">
-  <div class="column">
-    <div class="verticalcenter">
-      <img src="../images/avatar.jpg">
-    </div>
-  </div>
-  <div class="column">
+This blog is a place to collect my projects and thoughts relating to my current interests:
 
-    <p><b>My name is Josh Kraft</b>. I am a passionate generalist, currently interested in building scalable software solutions in the cloud.</p>
-    
-    <p>I work at <a href="https://www.ncino.com">nCino</a>, a leading fintech company built on the Salesforce platform. Previously, I was a Hollings Scholar with NOAA's <a href="https://www.esrl.noaa.gov">Earth System Research Laboratories</a>, where I worked on geospatial modeling to predict the origin of high-ozone air masses.</p>
+- Data ethics
+- Reproducibility in data projects
+- Low cost, high performance ML systems
 
-    <p>This blog is a place to collect my projects and thoughts relating to my current interests:</p>
-
-    <ul>
-        <li>Data ethics</li>
-        <li>Reproducibility in data projects</li>
-        <li>Low cost, high performance machine learning systems</li>
-    </ul>
-
-    <p>You can find more about my background on <a href="https://www.linkedin.com/in/joshtkraft/">my LinkedIn</a>, and my resume can be found <a href="https://drive.google.com/file/d/1I65R9kv9rE_HA8f11GQE8xFqUSRiTM0t/view">here</a>.</p>
-
-  </div>
-</div>
-</html>
+You can find more about my background on [LinkedIn](https://www.linkedin.com/in/joshtkraft/), and you can find my resume [here](https://drive.google.com/file/d/1I65R9kv9rE_HA8f11GQE8xFqUSRiTM0t/view).
