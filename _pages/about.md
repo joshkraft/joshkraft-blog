@@ -1,11 +1,11 @@
 ---
 layout: page
-title: About
+title: About Josh Kraft
 permalink: /about/
 ---
 ![]({{site.baseurl}}/images/avatar.jpg)
 
-My name is **Josh Kraft**. I am a passionate generalist, currently interested in ML and cloud software solutions. I hold a number of cloud certifications, including [AWS Machine Learning Speciality](https://aws.amazon.com/certification/certified-machine-learning-specialty) and [Salesforce Platform Developer II](https://trailhead.salesforce.com/en/help?article=Salesforce-Certified-Platform-Developer-II-Exam-Guide).
+I am a passionate generalist, currently interested in ML and cloud softwares. I hold a number of certifications, including [AWS Machine Learning Speciality](https://aws.amazon.com/certification/certified-machine-learning-specialty) and [Salesforce Platform Developer II](https://trailhead.salesforce.com/en/help?article=Salesforce-Certified-Platform-Developer-II-Exam-Guide).
 
 I currently lead a team of Support Engineers at [nCino](https://www.ncino.com), a leading fintech company built on the Salesforce platform. Previously, I was a Hollings Scholar with NOAA's [Earth Systems Research Laboratory](https://www.esrl.noaa.gov), where I worked on geospatial modeling to predict the origin of high-ozone air masses.
 

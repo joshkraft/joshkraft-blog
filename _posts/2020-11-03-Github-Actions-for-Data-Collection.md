@@ -6,8 +6,8 @@ toc: true
 comments: true
 image: images/blog_posts/github_actions_for_data_collection/github_actions_logo.png
 hide: false
-search_exclude: true
-categories: data collection
+search_exclude: false
+categories:
 ---
 
 ## Summary
