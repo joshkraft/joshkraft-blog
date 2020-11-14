@@ -11,7 +11,7 @@ categories: data collection
 ---
 
 ## Summary
-> In this blogpost, I will outline why **Github Actions can be useful for small-scale data collection projects**, by offering a free way to repeatedly run small data collection scripts in the cloud and push the data into a repository. Then, I will walk through how this tool can be used for **scraping Twitter data**, including how to **securely store API credentials** in Github.
+In this blogpost, I will outline why **Github Actions can be useful for small-scale data collection projects**, by offering a free way to repeatedly run small data collection scripts in the cloud and push the data into a repository. Then, I will walk through how this tool can be used for **scraping Twitter data**, including how to **securely store API credentials** in Github.
 
 ## Motivation
 
@@ -30,11 +30,11 @@ For many small-scale or exploratory projects, the first two options are often to
 
 Modern Python libraries such as [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) and [Tweepy](https://www.tweepy.org) have lowered the barrier to entry for generating datasets through scraping or accessing APIs. After a brief dive into the documentation, you can pretty reliably start gathering your own data for future use. 
 
-However, oftentimes data needs to be gathered on a continuous basis. For example, a someone might be interested in gathering tweets about a certain topic on an hourly basis for analysis by stakeholders. The simplest approach would be to simply run the program on a laptop, hourly, and push the data into a repository somewhere. This is considered an [on-premises approach](https://en.wikipedia.org/wiki/On-premises_software) — the infrastructure for the project is supplied and maintained by the person that owns the laptop. This can be a great starting point for data projects, but the dependence on the availability of your laptop introduces an unnecessary liability into the system.
+However, data often needs to be gathered on a continuous basis. For example, a someone might be interested in gathering tweets about a certain topic on an hourly basis for analysis by stakeholders. The simplest approach would be to simply run the program on a laptop, hourly, and push the data into a repository somewhere. This can be a great starting point for data projects, but the dependence on the availability of your laptop introduces an unnecessary liability into the system.
 
-One way to eliminate this liability is to use a [cloud-based serverless computing](https://en.wikipedia.org/wiki/Serverless_computing) platform like [AWS Lambda](https://aws.amazon.com/lambda/) or [Google Cloud Functions](https://cloud.google.com/functions/docs/), which can be configured automatically run scripts and move the data for a fee. This platforms are very reliable, and are often the best choice for complex data projects.
+One way to eliminate this liability is to use a [cloud-based serverless computing](https://en.wikipedia.org/wiki/Serverless_computing) platform like [AWS Lambda](https://aws.amazon.com/lambda/) or [Google Cloud Functions](https://cloud.google.com/functions/docs/), which can be configured automatically run scripts (and move data) for a fee. These platforms are very reliable, and are often the best choice for complex data projects.
 
-However, recall that one of the allures of generating your own datasets is the fact that it can much cheaper than simply purchasing a dataset. AWS Lambda and Google Cloud functions are great platforms, but are often overkill for small scale projects. In this post, I will propose a workflow that leverages [**Github Actions**](https://docs.github.com/en/free-pro-team@latest/actions) for small scale data collection projects, which <u>adds the benefits of cloud-based serverless computing without (necessarily) adding cost</u>.
+Recall that one of the allures of generating your own datasets is the fact that it can much cheaper than simply purchasing a dataset. AWS Lambda and Google Cloud functions are great platforms, but are often overkill for small scale projects. In this post, I will propose a workflow that leverages [**Github Actions**](https://docs.github.com/en/free-pro-team@latest/actions) for small scale data collection projects, which <u>adds the benefits of cloud-based serverless computing without (necessarily) adding cost</u>.
 
 > **Note**: AWS Lambda, Google Cloud Functions, and Github Actions all have both free and paid tiers, and could fill this use case. However, my experience is that Github Actions are a better choice for small scale projects due to the generosity of the free tier, ease of use, and close integration with Github, where a project's code is typically already living.
 
@@ -46,11 +46,9 @@ Github Actions are a tool integrated into Github repositories, used to run small
 - Automatically release new code to end users, typically after passing the suite of tests (**[Continuous Delivery](https://en.wikipedia.org/wiki/Continuous_delivery)**).
 - Scheduled jobs. For example, you might want to aggregate some metrics on changes in a repository and send it to relevant parties.
 
-For more information about the capabilities (and limitations) of Github Actions, I would reccomend checking out the official [Quickstart for GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions/quickstart). 
+For more information about the capabilities (and limitations) of Github Actions, I would reccomend checking out the official [Quickstart for GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions/quickstart). In this case, we can use the scheduling capabilities of Github Actions to run our data collection script on a defined schedule, and let the Github servers handle the collection and moving of data. 
 
-In this case, we can use the scheduling capabilities of Github Actions to run our data collection script on a defined schedule, and let the Github servers handle the collection and moving of data. 
-
-> **Note**: there are limitations to what Github Actions can be used for, especially while staying in the free tier. You should consult the [official documentation](https://docs.github.com/en/free-pro-team@latest/actions/reference/usage-limits-billing-and-administration) when deciding if this platform is right for your project. 
+> **Note**: There are limitations to what Github Actions can be used for, especially while staying within the free tier. You should consult the [official documentation](https://docs.github.com/en/free-pro-team@latest/actions/reference/usage-limits-billing-and-administration) when deciding if this platform is right for your project. 
 
 ## An Example: Twitter Profile Scraper
 
@@ -75,10 +73,10 @@ Before beginning, you must gain access to the Twitter API by signing up for the 
 
 There are four main files that make this project work:
 
-1. **scrape.py**: Python script performs the actual data collection.
+1. **scrape.py**: Performs the actual data collection.
 2. **most_recent_tweet_id.json**: Stores the last retrieved Tweet ID for each user.
-3. **workflow.yml**: YML file defining our main Github Action to run scrape.py.
-4. **decrypt_secret.sh**: Shell script used to decrypt the API credentials.
+3. **workflow.yml**: Defines the main Github Action to run scrape.py.
+4. **decrypt_secret.sh**: Decrypts the API credentials.
 
 ### scrape.py
 
@@ -110,8 +108,6 @@ This program can be broken down into the following steps:
    The following function is used to authenticate to the Twitter API, by opening a file containing API keys and then making a call to `tweepy.API()`:
 
    ```python
-   import tweepy 
-   
    def authenticate_with_secrets(secret_filepath):
        secret_file = open(secret_filepath)
        secret_data = json.load(secret_file)
@@ -127,9 +123,7 @@ This program can be broken down into the following steps:
        
        return api
    ```
-
    
-
 2. **Specify which accounts to collect tweets from.**
 
    This step is pretty self explanatory. I have opted to simply specify the Twitter accounts of interest as a list in our main function:
@@ -137,8 +131,6 @@ This program can be broken down into the following steps:
    ```python
    usernames = ["realDonaldTrump", "JoeBiden"]
    ```
-
-   
 
 3. **Fetch tweets, using existing data a starting point.**
 
@@ -213,7 +205,7 @@ This program can be broken down into the following steps:
    update_last_tweet_ids(last_tweet_ids)
    ```
 
-   For reference, the `most_recent_tweet_id.json` file would look something like this:
+   For reference, the `most_recent_tweet_id.json` file might look something like this:
 
    ```json
    {
@@ -222,11 +214,11 @@ This program can be broken down into the following steps:
    }
    ```
 
-To see the entire scrape.py file, you can see [the latest version here](https://github.com/joshkraft/daily-candidate-tweets/blob/main/scrape.py). At this point, we can see the overall functionality of the program. Two details remain: scheduling the program, and securely storing our credentials.
+You can view [the latest version of scrape.py here](https://github.com/joshkraft/daily-candidate-tweets/blob/main/scrape.py). At this point, we can see the overall functionality of the program. Two details remain: scheduling the program, and securely storing our credentials.
 
 ### workflow.yml
 
-Scheduling our program to run is very easy with Github Actions. To begin, create a `.github` folder in the root folder of the project, and then create a folder called `workflows`within `.github`. Anything in this folder will be considered an Action by Github. Our directory has a file called `workflow.yml`, which I will walk through briefly here. I have added comments for clarity, as the syntax of this file may be unfamiliar.
+Scheduling our program to run is very easy with Github Actions. To begin, create a `.github` folder in the root folder of the project, and then create a folder called `workflows`within that folder. Anything YAML files in this folder will be considered an Action by Github. Our file is called `workflow.yml`, and I will walk through it briefly here. I have added comments for clarity, as the syntax of this file may be unfamiliar.
 
 First, we will set the schedule to run this action on an hourly cadence:
 
@@ -257,25 +249,19 @@ The rest of `workflow.yml` consists of defining small steps to define the action
 			# Checkout a fresh version of the project.
       - name: Checkout Repository.
         uses: actions/checkout@v2
-```
-
-```yaml
+        
       # Configure Python. 
       - name: Setup Python 3.7.
               uses: actions/setup-python@v2
               with:
                 python-version: '3.7'
-```
-
-```yaml
+                
       # Decrypt our API credentials. 
       - name: Decrypt Secrets file.
               run: ./.github/scripts/decrypt_secret.sh
               env:
                 SECRET_PASSPHRASE: ${{ secrets.SECRET_PASSPHRASE }}
-```
-
-```yaml
+                
       # Install needed packages, and run scrape.py, passing in API credentials. 
       - name: Install dependencies and run script.
               run: |
@@ -287,9 +273,7 @@ The rest of `workflow.yml` consists of defining small steps to define the action
                 CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET }}
                 ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
                 ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
-```
-
-```yaml
+                
       # If any new data was fetched, create a new commit to the repo. 
       - name: Commit data to repo.
               run: |
@@ -303,7 +287,7 @@ The rest of `workflow.yml` consists of defining small steps to define the action
 
 ### decrypt_secret.sh
 
-In Step 3 above, we reference a file called `decrypt_secret.sh`. So far as I can tell, this is the best workflow for securely accessing API credentials (or any credentials for that matter) from a Github Action:
+In Step 3 above, we reference a file called `decrypt_secret.sh`. So far as I can tell, this is the best workflow for securely accessing credentials from a Github Action:
 
 1. Store your credentials in a file, locally. For example, this project originally had a file like this, `secrets.json`:
 
@@ -322,7 +306,7 @@ In Step 3 above, we reference a file called `decrypt_secret.sh`. So far as I can
    $ gpg --symmetric --cipher-algo AES256 secrets.json
    ```
 
-   You will need to supply a password at this point.
+   You will need to supply a password at this point. Be sure to store it somewhere safely.
 
 3. Notice that you now have a file named `secrets.json.gpg`. This is the encrypted file, and can only be decrypted with the password. Add this to your project, and push it to Github. **Note:** be sure not to accidentally push your unencrypted `secrets.json` to Github as well!
 
