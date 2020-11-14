@@ -7,10 +7,10 @@ ERRORS=""
 
 for file in *.ipynb
 do
-    if [ "${file}" = "" ]; then # Can put files to skip here
-        echo "Skipping ${file}"
-    elif papermill --kernel python3 "${file}" "${file}"; then
+    if [ "${file}" = "2020-21-10-Candidate-Tweets.ipynb" ] papermill --kernel python3 "${file}" "${file}"; then
         echo "Sucessfully refreshed ${file}\n\n\n\n"
+    elif [ "${file}" = "" ]; then # Can put files to skip here
+        echo "Skipping ${file}"
     else
         echo "ERROR Refreshing ${file}"
         ERRORS="${ERRORS}, ${file}"
