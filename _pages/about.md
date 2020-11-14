@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Josh Kraft
+title: About Me
 permalink: /about/
 ---
 ![]({{site.baseurl}}/images/avatar.jpg)
