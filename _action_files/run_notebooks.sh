@@ -9,10 +9,10 @@ for file in *.ipynb
 do
     if [ "${file}" = "2020-21-10-Candidate-Tweets.ipynb" ]
     then
-        papermill --kernel python3 "${file}" "${file}"; then
+        papermill --kernel python3 "${file}" "${file}"
         echo "Sucessfully refreshed ${file}\n\n\n\n"
     elif [ "${file}" = "" ]
-    then s
+    then
         echo "Skipping ${file}"
     else
         echo "ERROR Refreshing ${file}"
