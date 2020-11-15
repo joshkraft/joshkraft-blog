@@ -14,10 +14,6 @@ do
     elif [ "${file}" = "" ]
     then
         echo "Skipping ${file}"
-    else
-        echo "ERROR Refreshing ${file}"
-        ERRORS="${ERRORS}, ${file}"
-    fi
 done
 
 if [ -z "$ERRORS" ]
