@@ -11,7 +11,8 @@ do
     then
         papermill --kernel python3 "${file}" "${file}"
         echo "Sucessfully refreshed ${file}\n\n\n\n"
-    elif [ "${file}" = "" ]
+        
+    else
     then
         echo "Skipping ${file}"
 done
