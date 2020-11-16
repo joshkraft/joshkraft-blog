@@ -13,7 +13,6 @@ do
         echo "Sucessfully refreshed ${file}\n\n\n\n"
         
     else
-    then
         echo "Skipping ${file}"
 done
 
