@@ -6,7 +6,7 @@ toc: true
 comments: true
 hide: true
 search_exclude: true
-categories: data ethics
+categories:
 ---
 
 ## Overvi [data.csv](../../../../.Trash/data.csv) ew
