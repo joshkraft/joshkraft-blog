@@ -14,7 +14,7 @@ do
         
     else
         echo "Skipping ${file}"
-done
+fi
 
 if [ -z "$ERRORS" ]
 then
