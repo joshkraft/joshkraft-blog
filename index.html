@@ -4,13 +4,21 @@ search_exclude: true
 image: images/logo.png
 ---
 <style>
+    .left {
+        width: 35%;
+    }
+      
+    .right {
+        width: 65%;
+    }
+
     .row {
         display: flex;
-      }
+    }
       
     .column {
         flex: 50%;
-      }
+    }
 
     .center {
         display: table-cell;
@@ -20,10 +28,10 @@ image: images/logo.png
 </style>
 
 <div class="row">
-    <div class="column center">
+    <div class="left column center">
         <img src="/images/avatar.jpg" width="200">
     </div>
-    <div class="column">
+    <div class="right column">
         <h1>About</h1>
         <p>I am a passionate generalist, currently interested in the intersection of <b>ML</b> and <b>software engineering</b>. I hold a number of certifications, including the <b><a href="https://aws.amazon.com/certification/certified-machine-learning-specialty">AWS Machine Learning Speciality</a></b> and <b><a href="https://trailhead.salesforce.com/en/help?article=Salesforce-Certified-Platform-Developer-II-Exam-Guide">Salesforce Platform Developer II</a></b>.</p>
         
