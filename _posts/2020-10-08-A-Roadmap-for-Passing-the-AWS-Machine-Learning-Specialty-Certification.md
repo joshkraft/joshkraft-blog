@@ -1,8 +1,8 @@
 ---
 title: "A Roadmap for Passing the AWS Machine Learning Specialty Certification"
-description: "Reccomended resources for passing for the AWS Machine Learning Specialty."
+description: "Reccomended structure and resources for passing for the AWS Machine Learning Specialty in 2020."
 layout: post
-toc: false
+toc: true
 comments: true
 image: images/blog_posts/AWS_Machine_Learning_Certification_Roadmap/AWS-Certified_Machine-Learning_Specialty_512x512.6ac490d15fe033a3d67ca544ecd0bcbcb10d391a.png
 hide: false
@@ -14,23 +14,23 @@ categories: [AWS, Python]
 
 I recently passed the [**AWS Certified Machine Learning - Specialty**](https://aws.amazon.com/certification/certified-machine-learning-specialty/) exam. Given the relative newness of this exam (released in March 2019), I found it difficult to come across good resources around what sort of topics are tested on the exam, as well as the depth to which each topic is covered. On the [**certification homepage**](https://aws.amazon.com/certification/certified-machine-learning-specialty/), AWS gives the following description of the exam:
 
-> *The AWS Certified Machine Learning - Specialty certification is intended for individuals who perform a development or data science role. It validates a candidate's ability to design, implement, deploy, and maintain machine learning (ML) solutions for given business problems.*
+>The AWS Certified Machine Learning - Specialty certification is intended for individuals who perform a development or data science role. It validates a candidate's ability to design, implement, deploy, and maintain machine learning (ML) solutions for given business problems.
 
-AWS reccomends "*1-2 years of experience developing, architecting, or running ML/deep learning workloads on the AWS Cloud* " before attempting this exam. However, many people that are interested in this certification do not have 1-2 years of experience deploying machine learning (ML) on AWS, and are pursuing this certification as a means to gain such experience. How should they proceed?
+AWS reccomends **"1-2 years of experience developing, architecting, or running ML/deep learning workloads on the AWS Cloud"** before attempting this exam. However, many people that are interested in this certification do not have 1-2 years of experience deploying machine learning (ML) on AWS, and are pursuing this certification as a means to gain such experience. How should they proceed?
 
-In this post, I will propose a road map for preparing for this exam, from the ground up, assuming no knowledge of of programming, ML, or AWS. This road map will be focused on *understanding*, rather than *memorization*. This is not the shortest or fastest path, but rather the path that I felt left me with deepest understanding of what ML really is, how it works under the hood, and why AWS can be useful for addressing some of the common pain points in the modern ML process. Feel free to skip any steps that are not useful to you. 
+In this post, I will propose a road map for preparing for this exam, from the ground up, assuming no knowledge of of programming, ML, or AWS. This road map will be focused on **understanding, rather than memorization**. This is not the shortest or fastest path, but rather the path that I felt left me with deepest understanding of what ML really is, how it works under the hood, and why AWS can be useful for addressing some of the common pain points in the modern ML process. Feel free to skip any steps that are not useful to you. 
 
-#### [Step 1: Become proficient(ish) in Python.](#step1)
+### [Step 1: Become proficient(ish) in Python.](#step1)
 
-#### [Step 2: Study ML until you can explain the key concepts/algorithms to a friend.](#step2)
+### [Step 2: Study ML until you can explain the key concepts to a friend.](#step2)
 
-#### [Step 3: Learn the AWS content.](#step3)
+### [Step 3: Learn the AWS content.](#step3)
 
-#### [Step 4: Read up on ML Engineering.](#step4)
+### [Step 4: Read up on ML Engineering.](#step4)
 
-#### [Step 5: Take the AWS practice exam, then the real thing.](#step5)
+### [Step 5: Take the AWS practice exam, then the real thing.](#step5)
 
-*Most of these resources are free. Paid resources will be denoted by a dollar sign ($).
+>**Note:** Most of these resources are free. Paid resources will be denoted by a dollar sign ($).
 
 ------
 
