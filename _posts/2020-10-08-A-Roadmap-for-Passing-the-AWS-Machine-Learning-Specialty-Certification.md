@@ -20,23 +20,13 @@ AWS reccomends **"1-2 years of experience developing, architecting, or running M
 
 In this post, I will propose a road map for preparing for this exam, from the ground up, assuming no knowledge of of programming, ML, or AWS. This road map will be focused on **understanding, rather than memorization**. This is not the shortest or fastest path, but rather the path that I felt left me with deepest understanding of what ML really is, how it works under the hood, and why AWS can be useful for addressing some of the common pain points in the modern ML process. Feel free to skip any steps that are not useful to you. 
 
-### [Step 1: Become proficient(ish) in Python.](#step1)
-
-### [Step 2: Study ML until you can explain the key concepts to a friend.](#step2)
-
-### [Step 3: Learn the AWS content.](#step3)
-
-### [Step 4: Read up on ML Engineering.](#step4)
-
-### [Step 5: Take the AWS practice exam, then the real thing.](#step5)
-
 >**Note:** Most of these resources are free. Paid resources will be denoted by a dollar sign ($).
 
 ------
 
 <a name="step1"></a>
 
-## 1. Become proficient(ish) in Python.
+## Step 1: Become proficient(ish) in Python.
 
 The first thing to note about this exam is that ~50% of the questions are about ML concepts. Here is a rough breakdown of the content on this exam:
 
@@ -73,7 +63,7 @@ This course provides a better starting point for those with absolutely no progra
 
 <a name="step2"></a>
 
-## 2. Study ML until you can explain the key concepts/algorithms to a friend.
+## Step 2: Study ML until you can explain the key concepts/algorithms to a friend.
 
 Once you are comfortable with the basics of Python, it is time to move on to the main focus of the exam: ML. In particular, the exam has a heavy focus on **tuning and debugging deep neural networks**. 
 
@@ -81,7 +71,7 @@ In order to get to the point where you can understand how to optimize these comp
 
 This material can be tough at first. However, the concepts all build on each other, and the more time you spend experimenting the faster you will gain understanding. Many of the resources in this section have a lot of overlap, and that is intentional. I find that the 'light-bulb' moments happen most often when you engage with the material in a few different ways. 
 
-### Reccomended Machine Learning Resources
+### Reccomended ML Resources
 
 [**Machine Learning Guide (Podcast)**](http://ocdevel.com/mlg)
 
@@ -105,9 +95,9 @@ At this point, you should have a solid foundational understanding of the basics 
 
 In this book (which is still in draft form as of October 2020), [Harrison Kinsley](https://github.com/Sentdex) guides you through the construction of a neural network in pure Python, starting from a single neuron and building up from there. 
 
-### Other Interesting ML Resources
+### Advanced ML Resources
 
-The above resources are more than sufficient to build enough understanding of ML in order to pass this certification. However, I found the following materials to be interesting when studying ML:
+The above resources are more than sufficient to build enough understanding of ML in order to pass this certification. However, if you would like to go even deeper, I have found the following materials to be very interesting:
 
 [**Lex Fridman Podcast**](https://lexfridman.com/podcast/)
 
@@ -129,9 +119,7 @@ This series of videos, produced by [Grant Sanderson](https://www.3blue1brown.com
 
 The other 50% of the exam covers the AWS services relevant to training, tuning, debugging, and deploying models in the AWS cloud. 
 
-> **Note**: At the time of this writing, AWS offers a 50% discount on a future certification exam after passing any of the AWS certifications. As such, it may make sense to actually take one of the entry level AWS exams first (such as Cloud Practitioner, which costs $100), in order to learn the fundamental AWS services. 
->
-> Assuming you pass that exam, you can then use the 50% discount to sign up for the Machine Learning Specialty exam. All in, you would spend $250 for 2 certifications, rather than $300 for 1 certification.
+> **Note**: At the time of this writing, AWS offers a 50% discount on a future certification exam after passing any of the AWS certifications. As such, it may make sense to actually take another AWS exam first (such as Cloud Practitioner, which costs $100), in order to learn the fundamental AWS services. Assuming you pass, you can then use the discount to sign up for the Machine Learning Specialty exam. All in, you would spend $250 for 2 certifications, rather than $300 for 1 certification.
 
 ### Reccomended AWS Resources
 
@@ -151,7 +139,7 @@ This repository of example notebooks is a phenomenal resource for getting hands-
 
 <a name="step4"></a>
 
-## Step 4. Read up on ML Engineering.
+## Step 4: Read up on ML Engineering.
 
 To tie everything together, I would strongly reccomend reading the [**Machine Learning Engineering book**](http://www.mlebook.com/wiki/doku.php) by [Andriy Burkov](https://twitter.com/burkov). This book is an incredible resource for learning about common stumbling blocks when deploying ML systems at scale, in production. **These concepts are tested heavily on the exam**, and are not easy to learn without industry experience. The book is distriuted on the 'read-first, buy-layer' principle, so you are free to read the book and only purchase it if you find it to be useful.
 
@@ -161,9 +149,7 @@ To tie everything together, I would strongly reccomend reading the [**Machine Le
 
 ## Step 5: Take the AWS practice exam, then the real thing.
 
-At this point, you should be ready to take (and pass) the AWS Machine Learning - Specialty certification. Since unofficial practice exams are so hard to come by for this exam, I would reccomend shelling out the $40 USD to take the official AWS practice exam.
-
-> **Note**: If you have passed an AWS certification in the past, you should have recieved a coupon for 1 free practice exam in your email Inbox.
+At this point, you should be ready to take (and pass) the AWS Machine Learning - Specialty certification. Since unofficial practice exams are so hard to come by for this exam, I would reccomend shelling out the $40 USD to take the official AWS practice exam. **Note**: If you have passed any AWS certification in the past, you should have recieved a coupon for a free practice exam in your email Inbox.
 
 I found that my performance on the practice exam was a good proxy for my performance on the real exam, so if you pass the practice exam, I would reccomend going ahead and signing up for the real thing. 
 
