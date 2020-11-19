@@ -1,5 +1,5 @@
 ---
-title: "How to Use Github Actions for Data Collection"
+title: "How to Use Github Actions for (Free) Data Collection"
 description: "Github Actions as a tool for small-scale data collection projects."
 layout: post
 toc: true
@@ -11,7 +11,7 @@ categories: Python
 ---
 
 ## Summary
-In this blogpost, I will outline why **Github Actions can be useful for small-scale data collection projects**, by offering a free way to repeatedly run small data collection scripts in the cloud and push the data into a repository. Then, I will walk through how this tool can be used for **scraping Twitter data**, including how to **securely store API credentials** in Github.
+In this blogpost, I will outline why Github Actions can be useful for small-scale data collection projects, by offering a free way to repeatedly run scripts in the cloud and push the data into a repository. Then, I will walk through how this tool can be used for **scraping Twitter data**, including how to **securely store API credentials** in Github.
 
 ## Motivation
 
@@ -32,9 +32,9 @@ Modern Python libraries such as [Beautiful Soup](https://www.crummy.com/software
 
 However, data often needs to be gathered on a continuous basis. For example, a someone might be interested in gathering tweets about a certain topic on an hourly basis for analysis by stakeholders. The simplest approach would be to simply run the program on a laptop, hourly, and push the data into a repository somewhere. This can be a great starting point for data projects, but the dependence on the availability of your laptop introduces an unnecessary liability into the system.
 
-One way to eliminate this liability is to use a [cloud-based serverless computing](https://en.wikipedia.org/wiki/Serverless_computing) platform like [AWS Lambda](https://aws.amazon.com/lambda/) or [Google Cloud Functions](https://cloud.google.com/functions/docs/), which can be configured automatically run scripts (and move data) for a fee. These platforms are very reliable, and are often the best choice for complex data projects.
+One way to eliminate this liability is to use a [cloud-based serverless computing](https://en.wikipedia.org/wiki/Serverless_computing) platform like [AWS Lambda](https://aws.amazon.com/lambda/) or [Google Cloud Functions](https://cloud.google.com/functions/docs/), which can automatically run scripts (and move data) for a fee. These platforms are very reliable, and are often the best choice for complex data projects.
 
-Recall that one of the allures of generating your own datasets is the fact that it can much cheaper than simply purchasing a dataset. AWS Lambda and Google Cloud functions are great platforms, but are often overkill for small scale projects. In this post, I will propose a workflow that leverages [**Github Actions**](https://docs.github.com/en/free-pro-team@latest/actions) for small scale data collection projects, which <u>adds the benefits of cloud-based serverless computing without (necessarily) adding cost</u>.
+Recall that one of the allures of generating your own datasets is the fact that it can much cheaper than simply purchasing a dataset. AWS Lambda and Google Cloud functions are great platforms, but are often overkill for small scale projects. In this post, I will propose a workflow that leverages [Github Actions](https://docs.github.com/en/free-pro-team@latest/actions) for small scale data collection projects, which **adds the benefits of cloud-based serverless computing without (necessarily) adding cost**.
 
 > **Note**: AWS Lambda, Google Cloud Functions, and Github Actions all have both free and paid tiers, and could fill this use case. However, my experience is that Github Actions are a better choice for small scale projects due to the generosity of the free tier, ease of use, and close integration with Github, where a project's code is typically already living.
 
@@ -43,18 +43,16 @@ Recall that one of the allures of generating your own datasets is the fact that 
 Github Actions are a tool integrated into Github repositories, used to run small workloads on servers owned, operated, and maintained by Github. Here are a few of the most common use cases for Github Actions:
 
 - Automatically run tests when new code is checked into a repository, before merging it into the overall codebase ([Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration)).
-- Automatically release new code to end users, typically after passing the suite of tests (**[Continuous Delivery](https://en.wikipedia.org/wiki/Continuous_delivery)**).
+- Automatically release new code to end users, typically after passing the suite of tests ([Continuous Delivery](https://en.wikipedia.org/wiki/Continuous_delivery)).
 - Scheduled jobs. For example, you might want to aggregate some metrics on changes in a repository and send it to relevant parties.
 
-For more information about the capabilities (and limitations) of Github Actions, I would reccomend checking out the official [Quickstart for GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions/quickstart). In this case, we can use the scheduling capabilities of Github Actions to run our data collection script on a defined schedule, and let the Github servers handle the collection and moving of data. 
-
-> **Note**: There are limitations to what Github Actions can be used for, especially while staying within the free tier. You should consult the [official documentation](https://docs.github.com/en/free-pro-team@latest/actions/reference/usage-limits-billing-and-administration) when deciding if this platform is right for your project. 
+For more information about the capabilities (and limitations) of Github Actions, I would reccomend checking out the official [Quickstart for GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions/quickstart). In this case, we can use the scheduling capabilities of Github Actions to run our data collection script on a defined schedule, and let the Github servers handle the collection and moving of data. (Note that there are limitations to what Github Actions can be used for, especially while staying within the free tier. You should consult the [official documentation](https://docs.github.com/en/free-pro-team@latest/actions/reference/usage-limits-billing-and-administration) when deciding if this platform is right for your project.)
 
 ## An Example: Twitter Profile Scraper
 
 As an example, I will walk through a simple data project I am currently working on. The overall goal of this project is to have an interesting visual way to see the tweets of the two main candidates in the 2020 US Presidential Election, Donald Trump and Joe Biden. 
 
-The first step in this project is to start collecting the tweets in a repository for later use. Here are some constraints I decided upon for this project:
+The first step in this project is to start collecting the tweets in a repository. Here are some constraints I decided upon for this project:
 
 - Data must be grabbed from Twitter on a near-real time basis. Tweets from last month are much less relevant than tweets from the last hour.
 - The data should be easily accessible to anyone. Due to the small amount of data in this project, we will just store it on Github for the sake of simplicity.
@@ -63,11 +61,11 @@ The first step in this project is to start collecting the tweets in a repository
 
 While Twitter does have a freely available API, there are some usage limits that you must adhere to. Due to the volume of data on the platform, you cannot make a request like this:
 
-> Get all tweets from *User X*.
+> Get all tweets from **User X**.
 
 Instead, the following approach must be taken:
 
-> Get a small number of tweets from *User X*, that meet certain conditions, that have occured *after Date Y* or *since the last tweet we retrieved from User X.*
+> Get a small number of tweets from **User X**, meeting certain criteria, that have occured **after Date Y** or **since the last tweet we retrieved from User X**.
 
 Before beginning, you must gain access to the Twitter API by signing up for the [Twitter Developer Platform](https://developer.twitter.com/en/docs/twitter-api). Once you have been accepted, create an Application with Read/Write access, and make sure to securely store your Consumer Key, Consumer Secret, Access Token, and Access Token Secret. 
 
@@ -103,7 +101,7 @@ def main():
 
 This program can be broken down into the following steps:
 
-1. **Authenticate with Twitter API.**
+**Authenticate with Twitter API.**
 
    The following function is used to authenticate to the Twitter API, by opening a file containing API keys and then making a call to `tweepy.API()`:
 
@@ -124,7 +122,7 @@ This program can be broken down into the following steps:
        return api
    ```
    
-2. **Specify which accounts to collect tweets from.**
+**Specify which accounts to collect tweets from.**
 
    This step is pretty self explanatory. I have opted to simply specify the Twitter accounts of interest as a list in our main function:
 
@@ -132,14 +130,14 @@ This program can be broken down into the following steps:
    usernames = ["realDonaldTrump", "JoeBiden"]
    ```
 
-3. **Fetch tweets, using existing data a starting point.**
+**Fetch tweets, using existing data a starting point.**
 
    As mentioned before, there are limits on the Twitter API that we must adhere to. In order to avoid fetching unnecessary data, we will do the following:
 
-   - Fetch a chunk of tweets from a user.
-
-   - Grab the id of the most recent tweet in that chunk, and store it in a JSON file.
-   - After some period of time, call the Twitter API referencing the above ID as a starting point. If there are new tweets, grab them. If not, move on.
+   1. Fetch a chunk of tweets from a user.
+   2. Then, grab the id of the most recent tweet in that chunk, and store it in a JSON file.
+   3. After some period of time, call the Twitter API referencing the above id as a starting point. 
+   4. If there are new tweets, grab them. If not, move on.
 
    ```python
    def get_last_tweet_ids():
@@ -164,7 +162,7 @@ This program can be broken down into the following steps:
    tweets = get_tweets_from_user(api, user, last_tweet_ids)
    ```
 
-4. **Proccess tweets, and then append them to a CSV file.**
+**Proccess tweets, and then append them to a CSV file.**
 
    The following code is used to process the tweets, and write them to a file within our repository:
 
@@ -187,13 +185,13 @@ This program can be broken down into the following steps:
            return df.to_csv(file_path, mode='a', header=False)
            
    if tweets:
-   	for tweet in tweets:
-       processed_tweet = process_raw_tweet(tweet)
-   		processed_tweets.append(processed_tweet)
-     upload_tweets(processed_tweets, file_path)
+       for tweet in tweets:
+           processed_tweet = process_raw_tweet(tweet)
+           processed_tweets.append(processed_tweet)
+       upload_tweets(processed_tweets, file_path)
    ```
 
-5. **Update the 'last tweet ids' file.**
+**Update the most_recent_tweet_id.json file.**
 
    The last step in the primary script is to update the `most_recent_tweet_id.json` file with the most recent tweet that we collected for each user:
 
@@ -229,7 +227,7 @@ name: Fetch New Tweets
 # Event that triggers workflow.
 on:
   schedule:
-  	# How often to run the workflow.
+  	
     - cron: '0 * * * *'
 ```
 
