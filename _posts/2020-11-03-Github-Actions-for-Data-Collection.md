@@ -224,11 +224,9 @@ First, we will set the schedule to run this action on an hourly cadence:
 # Name of the workflow.
 name: Fetch New Tweets
 
-# Event that triggers workflow.
 on:
-  schedule:
-  	
-    - cron: '0 * * * *'
+  schedule: # Event that triggers workflow.
+    - cron: '0 * * * *' # How often to run the workflow.
 ```
 
 Next, we need to define our 'job', giving it a name and stating what type of machine it should run on:
