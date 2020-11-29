@@ -70,8 +70,7 @@ include:
   - _pages
 
 # Customize heading
-header_pages:
-  - resume.md
+
 
 # This specifies what badges are turned on by default for notebook posts.
 default_badges:
