@@ -25,7 +25,7 @@ layout: notebook
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>{% include tip.html content='Select a user in the legend to isolate data.' %}</p>
+<p>{% include tip.html content='Click a user in the legend to isolate data from that user.' %}</p>
 
 </div>
 </div>
