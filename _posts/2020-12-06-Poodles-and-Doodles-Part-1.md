@@ -27,7 +27,7 @@ Companies often claim that using machine learning models in decision-making proc
 
 In recent years, lots of information about bias in machine learning systems has become available. However, much of this content is aimed at either researchers or the general public. Many people find this content to be either too deep or too shallow to be truly insightful. **In this series of blog posts, I aim to illustrate some of the important stumbling blocks that lead to biased machine learning systems by building, critiquing, and refining a an actual machine learning model.** In particular, I will build a convolutional neural network to classify dogs as either being poodles or doodles. Along the way, I will provide references to further resources for those interested in a deeper understanding of any particular topic.  
 
-In this post, I will lay the groundwork for future posts by outlining the basic stages that are used to build machine learning models, and briefly cover how each can be a source of bias. In future posts, I will build on this, demonstrating how to spot and resolve these issues in the real world.
+In this post, I will lay some groundwork by outlining the basic stages that are used to build machine learning models, and briefly cover how each can be a source of bias. In future posts, I will build on this, demonstrating how to spot and resolve these issues in the real world.
 
 ## How Bias Emerges in Machine Learning Systems
 
