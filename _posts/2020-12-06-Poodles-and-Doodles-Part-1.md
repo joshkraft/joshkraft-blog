@@ -23,11 +23,11 @@ I agree with Ito. However, I think the jetpacks and blindfolds are already here.
 
 [Who gets sent to jail?](https://www.technologyreview.com/2019/10/17/75285/ai-fairer-than-judge-criminal-risk-assessment-algorithm/)
 
-Companies often claim that using machine learning models in decision-making processes will eliminate bias, and make decisions more objective by relying on logic and math rather than human judgement and emotion. However, without proper practices in place, these models can perpetuate existing biases, or introduce new biases. As a result, the human biases that have been studied for hundreds of years are replaced with complex computational biases, which are often hidden and difficult to diagnose.
+Companies often claim that using machine learning models in decision-making processes will eliminate bias, and make decisions more objective by relying on logic and math rather than human judgement and emotion. However, without proper practices in place, these models can perpetuate existing biases, or introduce new biases. As a result, the human biases that have been studied for hundreds of years are replaced with complex algorithmic biases, which are often hidden and difficult to diagnose.
 
-In recent years, lots of information about bias in machine learning systems has become available. However, much of this content is aimed at either researchers, or the general public. Many people find this content to be either too deep or too shallow to be truly insightful. **In this series of blog posts, I aim to illustrate some of the important stumbling blocks that lead to biased machine learning systems by building, critiquing, and refining a real machine learning model.** In particular, I will build a convolutional neural network to classify dogs as either being poodles or doodles. Along the way, I will provide references to further resources for those interested in a deeper understanding of any particular topic.  
+In recent years, lots of information about bias in machine learning systems has become available. However, much of this content is aimed at either researchers or the general public. Many people find this content to be either too deep or too shallow to be truly insightful. **In this series of blog posts, I aim to illustrate some of the important stumbling blocks that lead to biased machine learning systems by building, critiquing, and refining a an actual machine learning model.** In particular, I will build a convolutional neural network to classify dogs as either being poodles or doodles. Along the way, I will provide references to further resources for those interested in a deeper understanding of any particular topic.  
 
-In this post, I will start by outlining the basic stages that are used to build machine learning models, and briefly cover how each can be a source of bias. In future posts, I will build on this foundation, and demonstrate how to spot and resolve these issues in the real world.
+In this post, I will lay the groundwork for future posts by outlining the basic stages that are used to build machine learning models, and briefly cover how each can be a source of bias. In future posts, I will build on this, demonstrating how to spot and resolve these issues in the real world.
 
 ## How Bias Emerges in Machine Learning Systems
 
@@ -38,22 +38,23 @@ To understand how bias is introduced in machine learning systems, it is helpful 
 
 > **Note**: this is a pretty big simplification — real machine learning systems are often much more complex, with loops and dependencies along the way. However, I do not believe that level of detail is useful here.
 
-Each of these stages can be a source of bias, without proper practices in place. Each machine learning system will be unique in construction and application, so in this post I will focus on *questions to ask* along the way, rather than *rules to follow.* 
+Each of these stages can be a source of bias. Each machine learning system will be unique in construction and application, so in this post I will focus on *questions to ask* along the way, rather than *rules to follow.* 
 
 ### Stage 1 (Data Collection)
 
 In Stage 1, data is collected from some **population**, or group of interest. The data will typically contain **features** (measured variables, such as *work history* or *income*) and **labels** (the output of interest, such as *spam/not spam* or *benign/malignant*). Here are some questions to ask during this stage:
 
-- **All data is imperfect. Is that being considered?**  All datasets are created in a historical context, and all contain measurement errors. These factors are not always obvious, and should be assessed before deciding to move forward with a given dataset. 
+- **All data is imperfect. Is that being considered?**  All datasets are created in a historical context, and all contain measurement errors. These characteristics are not always apparent, and should be assessed before deciding to move forward with a given dataset. 
 
-- **Is the sampled data representative of the entire population?** If the data disproportionately represents users from any  particular demographic (such as young social media users from the United States), it should not be treated as an accurate representation of the entire American population. Without proper consideration, this can lead to a model that does not generalize well when applied in the real world. This is commonly referred to as **representation bias**.
+- **Is the sampled data representative of the entire population?** If the data disproportionately represents users from any  particular demographic (such as young social media users from the United States), it should not be treated as an accurate representation of the entire global population. Without proper consideration, this can lead to a model that does not generalize well when applied in the real world. This is commonly referred to as **representation bias**.
+  
 - **Does the data reflect existing biases?** Even with proper sampling, datasets may serve as an accurate representation existing societal biases. In 2015, Amazon scrapped a ML-based recruiting tool  because it was [deemed to discriminate against women when making recommendations](https://www.reuters.com/article/us-amazon-com-jobs-automation-insight/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK08G) for technical roles such as software engineering. The problem? It was trained on ten years of historical data, which reflected the fact that software engineering has historically been a majority-male field. It is important to note that gender was not explicitly reported in the data — but algorithms can pick up on patterns that serve as a proxy for gender, such as attendance at an all-women university. This is commonly referred to as **historical bias**.
 
 ### Stage 2 (Algorithm Training / Evaluation)
 
 In Stage 2, an algorithm is trained on the collected data.  For each example in the data, the **features** are passed to the algorithm, and are used to try to predict which **label** is correct for that example. Then, the **error** (also known as **loss** or **cost**) is computed for the prediction, which is then used to help the algorithm be *less wrong* (and therefore *more right*) in the future. During this stage, the **performance** of the model is calculated. Here are some questions that should be considered at this stage:
 
-- **How is performance being measured?** There are a number of metrics that are used to evaluate the performance of an algorithm. Each metric has strengths and weaknesses, and will perform best under certain circumstances. The explanation of these metrics is beyond the scope of this post, but here are some of the most common ones, with links to further resources:
+- **How is performance being measured?** There are a number of metrics that are used to evaluate the performance of an algorithm. Each metric has strengths and weaknesses, and will be most useful under certain circumstances. The explanation of these metrics is beyond the scope of this post, but here are some of the most common ones, with links to further resources:
   - [Accuracy](https://developers.google.com/machine-learning/crash-course/classification/accuracy)
   - [Precision and Recall](https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall)
   - [F1 Score](https://en.wikipedia.org/wiki/F-score)
@@ -63,14 +64,15 @@ In Stage 2, an algorithm is trained on the collected data.  For each example in 
 
 ### Stage 3 (Application)
 
-In Stage 3, the model is deployed in the real world, applied to new data to make predictions and aid in decision-making processes. Unintended negative consequences can occur if there is a difference between the problem a model was trained to solve, and the situation in which the model is applied. **Hint**: there is *always* a difference. The important thing is to be aware of the difference, and to account for it. Here are some questions that should be considered at this stage:
+In Stage 3, the model is deployed in the real world, applied to new data to make predictions and aid in decision-making processes. Unexpected behavior can occur if there is a difference between the problem a model was trained to solve, and the situation in which the model is applied. (**Hint**: there is *always* a difference.) The important thing is to be aware of this gap, and to account for it. Here are some questions that should be considered at this stage:
 
 - **Is the model creating a feedback loop?** Consider the [algorithms that are used for predictive policing](https://arxiv.org/pdf/1706.09847.pdf). These models use the quantity of arrests in a certain area as a proxy for crime levels. Based on this pattern, the models direct more police to the areas where more arrests have occurred. The increased police-presence leads to more arrests, which is then delivered as feedback to the model, suggesting that even more police should be sent. This creates a [self-reinforcing feedback loop](https://en.wikipedia.org/wiki/Positive_feedback), as the output of the model's predictions are controlling the input it will receive in the future. These types of feedback loops can be very difficult to resolve once they are unleashed.
+  
 - **Is a model built on *correlation* being used to predict *causation*?** Consider this common example: ice cream consumption is very highly correlated with death by drowning. Does that mean that eating ice cream causes death by drowning? Of course not — both trends are driven by another factor, hot weather, which sends humans to both the ice cream stand and the swimming pool at a higher rate. This is easy for us to grasp — however algorithms do not possess the same common-sense that allows humans to spot this as a pattern of correlation, and not causation.
 
 # Conclusion
 
-In this post, I covered a brief introduction to bias in machine learning, and outlined some of the ways that bias can creep in during the machine learning lifecycle. In future blog posts, I plan to cover the following topics:
+In this post, I covered a brief introduction to bias in machine learning, and outlined some of the ways that bias can creep in during the machine learning lifecycle. In future blog posts, I plan to cover the following topics through the process of building and refining a machine learning model:
 
 - How to go about mitigating algorithmic bias, once a potential problem is detected.
 - How to build hybrid systems, with 'humans in the loop', to monitor models over time.
